@@ -8,6 +8,7 @@ rotation = 45;
 
 breakDistance = 32;
 
+
 enum HAND
 {
 	free,
@@ -30,3 +31,4 @@ handItemSprite[HAND.free] = spr_player_hands;
 handItemSprite[HAND.pickaxe] = spr_pickaxe;
 handItemSprite[HAND.axe] = spr_axe;
 handItemSprite[HAND.chainsaw] = spr_chainsaw;
+

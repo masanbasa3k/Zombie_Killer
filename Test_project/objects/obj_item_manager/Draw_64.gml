@@ -1,4 +1,4 @@
-
+if (!inventoryIsOpen){exit;}
 
 for (var i=0; i<ds_list_size(global.inv); i++)
 {
