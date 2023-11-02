@@ -34,6 +34,5 @@ enum playerHands
 }
 
 handHolding[playerHands.handOne] = HAND.free;
-handHolding[playerHands.handTwo] = HAND.free;
-handHolding[playerHands.handThree] = HAND.free;
-
+handHolding[playerHands.handTwo] = HAND.axe;
+handHolding[playerHands.handThree] = HAND.chainsaw;

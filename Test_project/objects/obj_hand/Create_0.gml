@@ -25,3 +25,8 @@ handDamage[HAND.free] = 10;
 handDamage[HAND.pickaxe] = 6;
 handDamage[HAND.axe] = 5;
 handDamage[HAND.chainsaw] = 10;
+
+handItemSprite[HAND.free] = spr_player_hands;
+handItemSprite[HAND.pickaxe] = spr_pickaxe;
+handItemSprite[HAND.axe] = spr_axe;
+handItemSprite[HAND.chainsaw] = spr_chainsaw;
