@@ -13,26 +13,27 @@ if (responseSelected > _max) responseSelected = _min;
 if (responseSelected < _min) responseSelected = _max;
 
 
-if mouse_check_button_pressed(vk_space)
+if keyboard_check_pressed(vk_space)
 {
-	var _messageLength = string_length(message);
-	if (textProgress >= _messageLength)
+
+	if (responses[0] != -1)
 	{
-		instance_destroy();
-		if (instance_exists(obj_text_queued))
+		with (originInstance)
 		{
-			with (obj_text_queued) ticket--;
-		}
-		else
-		{
-			with (obj_player) {state = last_state;}
-		}
+			if (other.responseSelected != 2)
+			{
+				scr_building_select_response(other.responseScripts[other.responseSelected], other.itemlistNuber)
+			}
+			else
+			{
+				instance_destroy(obj_text_building);
+				with (obj_player) {state = last_state;}
+			}
+		}	
 	}
-	else
-	{
-		if (textProgress > 2)
-		{
-			textProgress = _messageLength;
-		}
-	}
+		
+		
+	
+		
+	
 }

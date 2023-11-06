@@ -1,3 +1,4 @@
+layer_set_visible("T_buildable_ground", 0)
 if (!inBuilding) exit;
 
 var _cs = cell_size;
@@ -47,3 +48,5 @@ repeat(_r)
 }
 
 draw_set_alpha(1);
+
+layer_set_visible("T_buildable_ground", 1)
