@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (entityHp <= 0) && (has_apple)
+if (entityHp <= 0) && (has_apple < 2)
 {
 	scr_instance_create_item(x, y, item.apple);
 }

@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b081e29b-f81c-4de8-b2c2-874e0dd68a5c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 4,
   "parent": {
     "name": "items only",
     "path": "folders/Sprites/hands/items only.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 32,
-    "yorigin": 64,
+    "yorigin": 32,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

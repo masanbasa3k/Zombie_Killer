@@ -13,7 +13,11 @@ function scr_remove_item_from_env_for_buildings(){
 		var _count = _arr[1];
 		if  (_building_req_item_name == _item) && (_building_req_item_count <= _count)
 		{
-			_arr[@ 1] -= _building_req_item_count;
+			if (_arr[@ 1] == 1)
+			{
+				ds_list_delete(global.inv,_item);
+			}
+			else{_arr[@ 1] -= _building_req_item_count;}
 		}
 	}
 }

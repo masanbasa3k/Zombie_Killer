@@ -1,5 +1,14 @@
 global.inv = ds_list_create();
+
+global.invSize = 5;
+global.invSlots = [];
+create_slots = true;
+
+global.clicked = -1;
+
+
 inventoryIsOpen = false;
+
 enum item
 {
 	rock,
@@ -23,6 +32,15 @@ itemReq[item.rock] = noone;
 itemReq[item.wood] = noone;
 itemReq[item.apple] = noone;
 itemReq[item.coal] = noone;
-itemReq[item.axe] = [[item.rock, 0], [item.wood, 0]];
+itemReq[item.axe] = [[item.rock, 1], [item.wood, 1]];
 itemReq[item.pickaxe] = [[item.rock, 0], [item.wood, 0]];
 itemReq[item.coal] = [[item.wood, 1]];
+
+isWeapon[item.rock] = false;
+isWeapon[item.wood] = false;
+isWeapon[item.apple] = false;
+isWeapon[item.coal] = false;
+isWeapon[item.axe] = true;
+isWeapon[item.pickaxe] = true;
+isWeapon[item.chainsaw] = true;
+
