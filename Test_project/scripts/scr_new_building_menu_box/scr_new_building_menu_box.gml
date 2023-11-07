@@ -10,7 +10,7 @@ function scr_new_building_menu_box(){
 	with (instance_create_layer(0,0,"World",_obj))
 	{
 		message = argument[0];
-		itemlist = argument[3];
+		
 		if (instance_exists(other))
 		{originInstance = other.id}
 		else {originInstance = noone;}
@@ -22,13 +22,14 @@ function scr_new_building_menu_box(){
 		
 		if (argument_count > 2)
 		{
+			itemlist = argument[3];
 			responses = argument[2];
 			for (var i = 0; i < array_length_1d(responses); i++)
 			{
 				var _makerPosition = string_pos(":", responses[i]);
 				responseScripts[i] = string_copy(responses[i],1,_makerPosition-1);
 				responseScripts[i] = real(responseScripts[i]);
-				responses[i] = string_delete(responses[i],1,_makerPosition);
+				//responses[i] = string_delete(responses[i],1,_makerPosition);
 				breakpoint = 10;
 			}
 		}

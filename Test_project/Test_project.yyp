@@ -94,7 +94,6 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"scr_new_building_menu_box","path":"scripts/scr_new_building_menu_box/scr_new_building_menu_box.yy",},},
     {"id":{"name":"shd_outline","path":"shaders/shd_outline/shd_outline.yy",},},
-    {"id":{"name":"spr_building_menu","path":"sprites/spr_building_menu/spr_building_menu.yy",},},
     {"id":{"name":"spr_pickaxe","path":"sprites/spr_pickaxe/spr_pickaxe.yy",},},
     {"id":{"name":"spr_col","path":"sprites/spr_col/spr_col.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

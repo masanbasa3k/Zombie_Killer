@@ -26,7 +26,7 @@ if keyboard_check_pressed(vk_space)
 			}
 			else
 			{
-				instance_destroy(obj_text_building);
+				instance_destroy(other);
 				with (obj_player) {state = last_state;}
 			}
 		}	
