@@ -5,9 +5,9 @@ function scr_check_item_have(){
 	var _building_req_item_name = _how_many_req[0]
 	var _building_req_item_count = _how_many_req[1]
 	
-	for (var i=0; i<ds_list_size(global.inv); i++)
+	for (var i=0; i<array_length(global.inv); i++)
 	{
-		var _arr = global.inv[| i];
+		var _arr = global.inv[i];
 	
 		var _item = _arr[0];
 		var _count = _arr[1];

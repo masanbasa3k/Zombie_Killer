@@ -13,3 +13,13 @@ inputDirection = point_direction(0, 0, keyRight-keyLeft, keyDown-keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 
 if (!global.gamePaused) {script_execute(state);}
+
+
+if (global.inv[0][0] != -1)handHolding[0] = obj_item_manager.weaponHandEnum[global.inv[0][0]];
+else{handHolding[0] = HAND.free;}
+
+if (global.inv[1][0] != -1)handHolding[1] = obj_item_manager.weaponHandEnum[global.inv[1][0]];
+else{handHolding[1] = HAND.free;}
+
+if (global.inv[2][0] != -1)handHolding[2] = obj_item_manager.weaponHandEnum[global.inv[2][0]];
+else{handHolding[2] = HAND.free;}

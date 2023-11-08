@@ -5,19 +5,19 @@ function scr_remove_item_from_env_for_buildings(){
 	var _building_req_item_name = _how_many_req[0]
 	var _building_req_item_count = _how_many_req[1]
 	
-	for (var i=0; i<ds_list_size(global.inv); i++)
+	for (var i=0; i<array_length(global.inv); i++)
 	{
-		var _arr = global.inv[| i];
+		var _arr = global.inv[i];
 		
 		var _item = _arr[0];
 		var _count = _arr[1];
 		if  (_building_req_item_name == _item) && (_building_req_item_count <= _count)
 		{
-			if (_arr[@ 1] == 1)
+			if (_count == 1)
 			{
-				ds_list_delete(global.inv,_item);
+				global.inv[i] = [-1,-1]
 			}
-			else{_arr[@ 1] -= _building_req_item_count;}
+			else{global.inv[i][1] -= _building_req_item_count;}
 		}
 	}
 }

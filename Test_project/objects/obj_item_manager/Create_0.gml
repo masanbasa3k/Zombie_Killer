@@ -1,10 +1,12 @@
-global.inv = ds_list_create();
+global.inv = [];
 
-global.invSize = 5;
+global.invSize = 20+3;
 global.invSlots = [];
 create_slots = true;
 
 global.clicked = -1;
+
+global.hands = [[item.axe,-1],[item.axe,-1],[item.axe,-1]];
 
 
 inventoryIsOpen = false;
@@ -43,4 +45,9 @@ isWeapon[item.coal] = false;
 isWeapon[item.axe] = true;
 isWeapon[item.pickaxe] = true;
 isWeapon[item.chainsaw] = true;
+
+weaponHandEnum[0] = HAND.free;
+weaponHandEnum[item.axe] = HAND.axe;
+weaponHandEnum[item.pickaxe] = HAND.pickaxe;
+weaponHandEnum[item.chainsaw] = HAND.chainsaw;
 

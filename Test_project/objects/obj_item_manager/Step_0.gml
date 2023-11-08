@@ -5,27 +5,30 @@ if (keyboard_check_pressed(ord("I"))){inventoryIsOpen = !inventoryIsOpen;}
 
 if (create_slots)
 {
-	with (obj_player)
-	{
-		var _hand_slot_1 = instance_create_depth(100+0*64,32,-100,obj_inventory_slot)
-		with (_hand_slot_1){hand_slot = true;hand_slot_number=1}
-	
-		var _hand_slot_2 = instance_create_depth(100+1*64,32,-100,obj_inventory_slot)
-		with (_hand_slot_2){hand_slot = true;hand_slot_number=2}
-	
-		var _hand_slot_3 = instance_create_depth(100+2*64,32,-100,obj_inventory_slot)
-		with (_hand_slot_3){hand_slot = true;hand_slot_number=3}
-	}
-
 	if (array_length(global.invSlots) < global.invSize)
 	{
 		for (var i=0; i<global.invSize; i++)
 		{
-			var _inventory_slot = instance_create_depth(100+i*64,100,-100,obj_inventory_slot);
+			global.inv[i] = [-1,-1];
+			if (i < 8){var _x = 100+((i-3)*64); var _y = 100}
+			else if (i < 13){var _x = 100+((i-8)*64); var _y = 100+64}
+			else if (i < 18){var _x = 100+((i-13)*64); var _y = 100+128}
+			else if (i < 23){var _x = 100+((i-18)*64); var _y = 228+64}
+			var _inventory_slot = instance_create_depth(_x,_y,-999,obj_inventory_slot);
 			global.invSlots[i] = _inventory_slot;
 			_inventory_slot.self_number = i;
+			if (i<3)
+			{
+				_inventory_slot.x = 100+i*64;
+				_inventory_slot.y = 100-64;
+				_inventory_slot.hand_slot = true;
+				_inventory_slot.hand_slot_number = i;
+			}
 		}
 	}
+	global.inv[0] = global.hands[0];
+	global.inv[1] = global.hands[1];
+	global.inv[2] = global.hands[2];
 	create_slots = false;
 }
 
