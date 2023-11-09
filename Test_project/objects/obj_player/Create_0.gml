@@ -36,3 +36,5 @@ enum playerHands
 handHolding[playerHands.handOne] = HAND.free;
 handHolding[playerHands.handTwo] = HAND.free;
 handHolding[playerHands.handThree] = HAND.axe;
+
+holding_number = 0;

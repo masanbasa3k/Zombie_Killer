@@ -1,12 +1,12 @@
 global.inv = [];
 
-global.invSize = 20+3;
+global.invSize = 5+3;
 global.invSlots = [];
 create_slots = true;
 
 global.clicked = -1;
 
-global.hands = [[item.axe,-1],[item.axe,-1],[item.axe,-1]];
+global.hands = [[-1,-1],[-1,-1],[-1,-1]];
 
 
 inventoryIsOpen = false;
@@ -46,7 +46,6 @@ isWeapon[item.axe] = true;
 isWeapon[item.pickaxe] = true;
 isWeapon[item.chainsaw] = true;
 
-weaponHandEnum[0] = HAND.free;
 weaponHandEnum[item.axe] = HAND.axe;
 weaponHandEnum[item.pickaxe] = HAND.pickaxe;
 weaponHandEnum[item.chainsaw] = HAND.chainsaw;

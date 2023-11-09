@@ -7,4 +7,4 @@ if (dir < 1){image_xscale=-1;}
 image_speed=0;
 
 
-has_apple = random(200);
+has_apple = random(2);

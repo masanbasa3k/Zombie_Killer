@@ -7,7 +7,7 @@ enum building{
 }
 
 /// buildings cost
-buildingReq[building.furnace] = [[item.rock, 1], [item.coal, 0]];
+buildingReq[building.furnace] = [[item.rock, 1], [item.coal, 1]];
 buildingReq[building.table] = [[item.wood, 1]];
 
 /// buildings drop

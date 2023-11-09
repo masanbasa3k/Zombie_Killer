@@ -1,5 +1,8 @@
 self_number = -1;
 
+_x = x;
+_y = y;
+
 item_type = -1;
 item_spr = -1;
 item_count = 0;

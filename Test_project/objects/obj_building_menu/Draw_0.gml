@@ -12,7 +12,6 @@ for (var l = 0; l < (optionsCount + _desc); l++)
 	if(l == 0) && (_desc)
 	{
 		draw_text(x,y,description);
-		
 	}
 	else
 	{

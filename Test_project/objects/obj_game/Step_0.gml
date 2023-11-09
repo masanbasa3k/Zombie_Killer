@@ -22,3 +22,18 @@ if (keyboard_check_pressed(vk_escape))
 		}
 	}
 }
+
+if (global.MenuOpen == false)
+{
+	global.inventoryMenu = false;
+	global.buildingMenu = false;
+	global.settingsMenu = false;
+	obj_player.state = scr_player_state_free;
+}
+
+if (keyboard_check_pressed(vk_tab))
+{
+	global.MenuOpen = !global.MenuOpen;
+	global.inventoryMenu = true;
+	obj_player.state = scr_player_state_locked;
+}
