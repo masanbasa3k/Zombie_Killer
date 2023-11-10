@@ -8,6 +8,7 @@ rotation = 45;
 
 breakDistance = 32;
 
+isGun = false;
 
 enum HAND
 {

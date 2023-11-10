@@ -3,8 +3,14 @@
 function scr_player_animate_sprite(){
 	depth = -bbox_bottom;
 	if (hSpeed != 0) || (vSpeed != 0)
-	{sprite_index = spriteRun;
-		direction = inputDirection;}
+	{
+		sprite_index = spriteWalk;
+		direction = inputDirection;
+		if (hSpeed > walkspd) || (hSpeed < -walkspd) || (vSpeed > walkspd) || (vSpeed < -walkspd)
+		{
+			sprite_index = spriteRun
+		}
+	}
 	else
 	{sprite_index = spriteIdle;}
 	

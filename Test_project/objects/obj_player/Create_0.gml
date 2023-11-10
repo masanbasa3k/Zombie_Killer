@@ -6,15 +6,15 @@ activate = noone;
 
 hSpeed = 0;
 vSpeed = 0;
-speedWalk = 2.0;
-speedRoll = 4.0;
-distanceRoll = 72;
+spd = 0;
+walkspd = 1.0;
+runspd = 4.0;
 z = 0;
 
 
-spriteRun = spr_player_run;
+spriteWalk = spr_player_walk;
 spriteIdle = spr_player;
-spriteRoll= spr_player_roll;
+spriteRun = spr_player_run;
 localFrame = 0;
 
 // HAND

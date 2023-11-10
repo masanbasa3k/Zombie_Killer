@@ -2,7 +2,7 @@ inBuilding = global.buildingMenu
 
 
 
-if (inBuilding)
+if (inBuilding) && (select_building != -1)
 {
 	mx = mouse_x;
 	my = mouse_y;
@@ -10,6 +10,13 @@ if (inBuilding)
 	var _cs = cell_size;
 	var _gx = (mx div _cs);
 	var _gy = (my div _cs);
+	
+	if (instance_exists(obj_player))
+	{
+		player_x = obj_player.x;
+		player_y = obj_player.y;
+	}
+	var _dist = sqrt(power(mx - player_x,2) + power(my - player_y,2));
 	
 	var _cell = ds_buildings_instances[# _gx, _gy];
 	if (_cell == 0)
@@ -19,13 +26,7 @@ if (inBuilding)
 	var _data = tilemap_get_at_pixel(_map_id, mx, my);
 	if (_data != 0)
 	{
-	
-	if (mouse_wheel_up()) select_building += 1;
-	if (mouse_wheel_down()) select_building -= 1;
-	
-	if (select_building > sprite_get_number(spr_buildings)-1){select_building = 0;}
-	else if (select_building < 0) {select_building = sprite_get_number(spr_buildings)-1}
-	
+
 	var _list_of_true = []
 	_allOnes = true;
 	
@@ -45,7 +46,7 @@ if (inBuilding)
 	    }
 	}
 	
-	if (_allOnes) && (obj_player.keyUse)
+	if (_allOnes) && (obj_player.keyUse) && (_dist <= 96)
 	{
 		for (var i=0; i<array_length(buildingReq[select_building]); i++)
 		{
@@ -56,4 +57,18 @@ if (inBuilding)
 	}
 	}
 	}
+}
+
+
+// buildings buttons
+if (create_buttons)
+{
+	for (var i = 0; i < sprite_get_number(spr_buildings); i++)
+	{
+		with(instance_create_depth(RESOLUTION_W-64,64+i*64,-999,obj_buildings_buttons))
+		{
+			building_number = i;
+		}
+	}
+	create_buttons = false;
 }

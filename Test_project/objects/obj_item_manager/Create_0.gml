@@ -1,6 +1,6 @@
 global.inv = [];
 
-global.invSize = 5+3;
+global.invSize = 20+3;
 global.invSlots = [];
 create_slots = true;
 

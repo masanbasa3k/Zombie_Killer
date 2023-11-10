@@ -6,7 +6,6 @@ keyDown = keyboard_check(ord("S")) || keyboard_check(vk_down);
 
 keyActivate = keyboard_check(ord("E"));
 keyUse = mouse_check_button_pressed(mb_left);
-keyRoll = keyboard_check(vk_space);
 keyRun = keyboard_check(vk_shift);
 
 inputDirection = point_direction(0, 0, keyRight-keyLeft, keyDown-keyUp);

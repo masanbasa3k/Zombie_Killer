@@ -1,9 +1,10 @@
 layer_set_visible("T_buildable_ground", 0)
-if (!inBuilding) exit;
+if (!inBuilding) || (select_building == -1) exit;
 
 var _cs = cell_size;
 var _gx = (mx div _cs);
 var _gy = (my div _cs);
+var _dist = sqrt(power(mx - player_x,2) + power(my - player_y,2));
 
 
 // what is in the cell
@@ -15,7 +16,7 @@ if (_cell == 0)
 	var _lay_id = layer_get_id("T_buildable_ground");
 	var _map_id = layer_tilemap_get_id(_lay_id);
 	var _data = tilemap_get_at_pixel(_map_id, mx, my);
-	if (_data != 0) && (_allOnes) {_c = c_lime;}
+	if (_data != 0) && (_allOnes) && (_dist <= 96) {_c = c_lime;}
 }
 
 var _xx = _gx*_cs;
@@ -50,3 +51,4 @@ repeat(_r)
 draw_set_alpha(1);
 
 layer_set_visible("T_buildable_ground", 1)
+

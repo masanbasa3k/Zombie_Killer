@@ -28,6 +28,7 @@ item_type = global.inv[self_number][0];
 item_count = global.inv[self_number][1];
 if (item_type!=-1){item_spr = obj_item_manager.itemSprite[item_type];}
 
+if (!obj_item_manager.inventoryIsOpen){exit;}
 if (item_type != -1)
 {
 	if (hovering)
@@ -54,12 +55,13 @@ if (item_type != -1)
 		{
 			global.inv[self_number][1] += global.inv[global.clicked][1];
 			global.inv[global.clicked] = [-1,-1];
+			global.clicked = -1;
 		}
 	}
 }
 else
 {
-	if (hovering) && (mouse_check_button_released(mb_left))
+	if (hovering) && (mouse_check_button_released(mb_left)) && (global.clicked != -1)
 	{
 		if (global.inv[self_number][0] == -1)
 		{

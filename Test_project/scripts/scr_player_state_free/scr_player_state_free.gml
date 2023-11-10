@@ -3,8 +3,8 @@
 function scr_player_state_free(){
 	
 	// Movement
-	hSpeed = lengthdir_x(inputMagnitude * speedWalk, inputDirection);
-	vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
+	hSpeed = lengthdir_x(inputMagnitude * spd, inputDirection);
+	vSpeed = lengthdir_y(inputMagnitude * spd, inputDirection);
 
 	var _closestObj = instance_nearest(x, y, par_entity);
 	var _closestObjDistance = point_distance(x, y, _closestObj.x, _closestObj.y)
@@ -53,9 +53,12 @@ function scr_player_state_free(){
 	scr_player_change_hand();
 	
 	
-	if (keyRoll)
+	if (keyRun)
 	{	
-		state = scr_player_state_roll;
-		moveDistanceRemaining = distanceRoll;
+		spd = runspd;
+	}
+	else
+	{
+		spd = walkspd;
 	}
 }
