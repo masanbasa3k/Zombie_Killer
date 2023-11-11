@@ -1,10 +1,5 @@
 draw_sprite_stretched(spr_building_menu, 0, x-margin, y-margin, widthFull, heightFull);
 
-draw_set_color(c_white);
-draw_set_font(fnt_text);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-
 var _desc = !(description == -1);
 for (var l = 0; l < (optionsCount + _desc); l++)
 {

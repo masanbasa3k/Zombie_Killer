@@ -16,11 +16,11 @@ buildingDrop[building.furnace] = [[item.rock, 3], [item.coal, 2]];
 buildingDrop[building.table] = [[item.wood, 2]];
 
 /// buildings makeble items
-buildingMenu[building.furnace] = ["Furnace",0,["1:Coal", "2:Selection 2", "3:Exit"]]
-buildingMenuItem[building.furnace] = [3];// coal
-buildingItem[building.furnace] = [item.coal];// coal
+buildingMenu[building.furnace] = ["Furnace"]
+buildingMenuItem[building.furnace] = [3, 7, 8];// coal
+buildingItem[building.furnace] = [item.coal, item.iron_bar, item.gold_bar];// coal
 
-buildingMenu[building.table] = ["Table",1,["1:Axe", "2:Pickaxe", "3:Exit"]]
+buildingMenu[building.table] = ["Table"]
 buildingMenuItem[building.table] = [4,5];
 buildingItem[building.table] = [item.axe, item.pickaxe];
 

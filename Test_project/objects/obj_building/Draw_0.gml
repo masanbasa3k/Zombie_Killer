@@ -1,5 +1,4 @@
 
-
 if (drawLine)
 {
 	shader_set(shd_outline);

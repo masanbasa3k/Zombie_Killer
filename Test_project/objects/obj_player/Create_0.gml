@@ -3,12 +3,13 @@ last_state = state;
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 activate = noone;
+_closestObj = -1;
 
 hSpeed = 0;
 vSpeed = 0;
 spd = 0;
 walkspd = 1.0;
-runspd = 4.0;
+runspd = 2.0;
 z = 0;
 
 

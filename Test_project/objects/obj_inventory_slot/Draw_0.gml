@@ -1,5 +1,4 @@
-draw_set_font(fnt_text);
-
+if (instance_exists(obj_buildings_inside_menu)){exit;}
 if (hand_slot)
 {
 	if (obj_item_manager.inventoryIsOpen)

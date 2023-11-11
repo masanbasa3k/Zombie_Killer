@@ -13,8 +13,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"propertyId":{"name":"entityActivateArgs","path":"objects/par_entity/par_entity.yy",},"value":"[-1]",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Buildings",
+    "path": "folders/Objects/Buildings.yy",
   },
   "parentObjectId": {
     "name": "par_entity",

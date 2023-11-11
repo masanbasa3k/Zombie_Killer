@@ -15,8 +15,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"propertyId":{"name":"entityDrop","path":"objects/par_entity/par_entity.yy",},"value":"[item.rock, item.coal,2]",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Entities",
+    "path": "folders/Objects/Entities.yy",
   },
   "parentObjectId": {
     "name": "par_entity",

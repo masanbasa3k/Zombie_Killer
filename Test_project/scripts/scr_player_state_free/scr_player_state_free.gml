@@ -28,9 +28,12 @@ function scr_player_state_free(){
 		}
 		else if (_closestObj.entityBuilding) && (keyUse)
 		{
-			scr_script_execute_array(_closestObj.entityActivateScript,buildings.buildingMenu[_closestObj.buildingType]);
-			obj_text_building.itemlistNuber = buildings.buildingMenuItem[_closestObj.buildingType]
-			obj_text_building.itemlist = buildings.buildingItem[_closestObj.buildingType]
+			with(instance_create_depth(0,0,-998,obj_buildings_inside_menu))
+			{
+				building_type = _closestObj.buildingType;
+				building_x = _closestObj.x;
+				building_y = _closestObj.y;
+			}
 		}
 		else if (_closestObj.entityDestroyable) && (player_hand.cooldown == 0) && (keyUse)
 		{
@@ -40,7 +43,9 @@ function scr_player_state_free(){
 		}
 	}
 	else
-	{par_entity.drawLine = false;}
+	{
+		par_entity.drawLine = false;
+	}
 	
 	
 	// Player Collision

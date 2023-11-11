@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (keyboard_check_pressed(vk_escape))
+if (obj_player.x < -1)
 {
 	global.gamePaused = !global.gamePaused;
 	
@@ -31,7 +31,7 @@ if (global.MenuOpen == false)
 	obj_player.state = scr_player_state_free;
 }
 
-if (keyboard_check_pressed(vk_tab))
+if ((keyboard_check_pressed(vk_tab)) || (keyboard_check_pressed(vk_escape))) && (!instance_exists(obj_buildings_inside_menu))
 {
 	global.MenuOpen = !global.MenuOpen;
 	global.inventoryMenu = true;

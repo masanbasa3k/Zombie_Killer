@@ -1,3 +1,4 @@
+
 entityPC = (entityHp / entityMaxHp) * 100;
 
 if (entityHp <= 0)

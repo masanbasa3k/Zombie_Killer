@@ -14,14 +14,13 @@ function scr_player_animate_sprite(){
 	else
 	{sprite_index = spriteIdle;}
 	
-	
-	
 	var _signMouse = sign(mouse_x-x)
 	if (_signMouse != 0)
 	{
 		image_xscale = _signMouse;
-		if (sign(hSpeed) == _signMouse) && (hSpeed !=0) {image_speed = 2;}
-		else if (sign(hSpeed) != _signMouse) && (hSpeed !=0) {image_speed = -2;}
-		else{image_speed = 1;}
+		if (sign(hSpeed) == _signMouse) && (hSpeed !=0) {image_speed = 2.5;}
+		else if (sign(hSpeed) != _signMouse) && (hSpeed !=0) {image_speed = -2.5;}
+		else if (vSpeed > walkspd) || (vSpeed < -walkspd) {image_speed = 2.5;}
+		else{image_speed = 2;}
 	}
 }
