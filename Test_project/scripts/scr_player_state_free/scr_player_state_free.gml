@@ -58,7 +58,7 @@ function scr_player_state_free(){
 	scr_player_change_hand();
 	
 	
-	if (keyRun)
+	if (keyRun) && (player_hand.holdingAim == false)
 	{	
 		spd = runspd;
 	}

@@ -10,6 +10,5 @@ y = obj_camera.y - 100 + (number*64)
 
 if (hovering) && (mouse_check_button_pressed(mb_left))
 {
-	show_debug_message(number)
 	scr_building_select_response(number, buildings.buildingMenuItem[obj_buildings_inside_menu.building_type])
 }

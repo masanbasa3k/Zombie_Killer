@@ -22,6 +22,7 @@ enum item
 	chainsaw,
 	iron_bar,
 	gold_bar,
+	rusty_boltAction,
 }
 
 itemSprite[item.rock] = spr_rock;
@@ -33,7 +34,7 @@ itemSprite[item.pickaxe] = spr_pickaxe;
 itemSprite[item.chainsaw] = spr_chainsaw;
 itemSprite[item.iron_bar] = spr_iron_bar;
 itemSprite[item.gold_bar] = spr_gold_bar;
-
+itemSprite[item.rusty_boltAction] = spr_rusty_boltAction;
 
 
 itemReq[item.rock] = noone;
@@ -45,6 +46,7 @@ itemReq[item.pickaxe] = [[item.rock, 0], [item.wood, 0]];
 itemReq[item.coal] = [[item.wood, 1]];
 itemReq[item.iron_bar] = noone;
 itemReq[item.gold_bar] = noone;
+itemReq[item.rusty_boltAction] = noone;
 
 
 isWeapon[item.rock] = false;
@@ -56,9 +58,13 @@ isWeapon[item.pickaxe] = true;
 isWeapon[item.chainsaw] = true;
 isWeapon[item.iron_bar] = false;
 isWeapon[item.gold_bar] = false;
+isWeapon[item.rusty_boltAction] = true;
+
 
 
 weaponHandEnum[item.axe] = HAND.axe;
 weaponHandEnum[item.pickaxe] = HAND.pickaxe;
 weaponHandEnum[item.chainsaw] = HAND.chainsaw;
+weaponHandEnum[item.rusty_boltAction] = HAND.rusty_boltAction;
+
 

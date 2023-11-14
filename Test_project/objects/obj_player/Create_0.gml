@@ -9,7 +9,7 @@ hSpeed = 0;
 vSpeed = 0;
 spd = 0;
 walkspd = 1.0;
-runspd = 2.0;
+runspd = 4.0;
 z = 0;
 
 
