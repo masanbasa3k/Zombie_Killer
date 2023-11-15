@@ -23,6 +23,11 @@ enum item
 	iron_bar,
 	gold_bar,
 	rusty_boltAction,
+	shotgun_ammo,
+	small_ammo,
+	medium_ammo,
+	large_ammo,
+	arrow,
 }
 
 itemSprite[item.rock] = spr_rock;
@@ -36,6 +41,12 @@ itemSprite[item.iron_bar] = spr_iron_bar;
 itemSprite[item.gold_bar] = spr_gold_bar;
 itemSprite[item.rusty_boltAction] = spr_rusty_boltAction;
 
+itemSprite[item.shotgun_ammo] = spr_shotgun_bullet_box;
+itemSprite[item.small_ammo] = spr_small_bullet_box;
+itemSprite[item.medium_ammo] = spr_medium_bullet_box;
+itemSprite[item.large_ammo] = spr_large_bullet_box;
+itemSprite[item.arrow] = spr_arrow_box;
+
 
 itemReq[item.rock] = noone;
 itemReq[item.wood] = noone;
@@ -47,6 +58,12 @@ itemReq[item.coal] = [[item.wood, 1]];
 itemReq[item.iron_bar] = noone;
 itemReq[item.gold_bar] = noone;
 itemReq[item.rusty_boltAction] = noone;
+
+itemReq[item.shotgun_ammo] = noone;
+itemReq[item.small_ammo] = noone;
+itemReq[item.medium_ammo] = noone;
+itemReq[item.large_ammo] = noone;
+itemReq[item.arrow] = noone;
 
 
 isWeapon[item.rock] = false;
@@ -60,11 +77,15 @@ isWeapon[item.iron_bar] = false;
 isWeapon[item.gold_bar] = false;
 isWeapon[item.rusty_boltAction] = true;
 
+isWeapon[item.shotgun_ammo] = false;
+isWeapon[item.small_ammo] = false;
+isWeapon[item.medium_ammo] = false;
+isWeapon[item.large_ammo] = false;
+isWeapon[item.arrow] = false;
 
 
 weaponHandEnum[item.axe] = HAND.axe;
 weaponHandEnum[item.pickaxe] = HAND.pickaxe;
 weaponHandEnum[item.chainsaw] = HAND.chainsaw;
 weaponHandEnum[item.rusty_boltAction] = HAND.rusty_boltAction;
-
 

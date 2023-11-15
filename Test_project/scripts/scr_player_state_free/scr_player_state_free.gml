@@ -35,7 +35,7 @@ function scr_player_state_free(){
 				building_y = _closestObj.y;
 			}
 		}
-		else if (_closestObj.entityDestroyable) && (player_hand.cooldown == 0) && (keyUse)
+		else if (_closestObj.entityDestroyable) && (player_hand.cooldown == 0) && (keyUse) && (!player_hand.ranged[player_hand.state])
 		{
 			_closestObj.entityHp -= player_hand.handDamage[player_hand.state];
 			player_hand.rotation = -70;
