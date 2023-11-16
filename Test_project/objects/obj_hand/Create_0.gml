@@ -50,11 +50,16 @@ ranged[HAND.axe] = false;
 ranged[HAND.chainsaw] = false;
 ranged[HAND.rusty_boltAction] = true;
 
+melee_wapon_durability[HAND.free] = 10;
+melee_wapon_durability[HAND.pickaxe] = 10;
+melee_wapon_durability[HAND.axe] = 10;
+melee_wapon_durability[HAND.chainsaw] = 10;
+
+// rusty weapon
 ranged_weapon_ammo_type[HAND.rusty_boltAction] = BULLETS.medium_bullet;
 ranged_weapon_ammo_item[HAND.rusty_boltAction] = item.medium_ammo;
 ranged_weapon_ammo_speed[HAND.rusty_boltAction] = 10;
 ranged_weapon_ammo_cone_size[HAND.rusty_boltAction] = [-6,6]
 ranged_weapon_ammo_range[HAND.rusty_boltAction] = 200;
 ranged_weapon_ammo_size[HAND.rusty_boltAction] = 10;
-
 ranged_weapon_is_auto[HAND.rusty_boltAction] = true;

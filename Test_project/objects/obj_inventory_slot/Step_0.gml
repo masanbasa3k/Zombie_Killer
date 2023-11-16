@@ -40,23 +40,17 @@ if (item_type != -1)
 		}
 		if (mouse_check_button_pressed(mb_right))
 		{
-			if (global.inv[self_number][1] != -1)
-			{
-				for (var i = 0;i<global.inv[self_number][1];i++)
-				{
-					scr_instance_create_item(obj_player.x+(obj_player.image_xscale*20),obj_player.y,global.inv[self_number][0])
-				}
-			}
-			else
-			{scr_instance_create_item(obj_player.x+(obj_player.image_xscale*20),obj_player.y,global.inv[self_number][0])}
+			scr_instance_create_item(obj_player.x+(obj_player.image_xscale*40),obj_player.y,item_type,item_count)
 			global.inv[self_number] = [-1,-1];
 		}
-		if (mouse_check_button_released(mb_left)) && (global.inv[self_number][0] == global.inv[global.clicked][0])
+
+		if (mouse_check_button_released(mb_left)) && (global.inv[self_number][0] == global.inv[global.clicked][0]) && (!obj_item_manager.isWeapon[item_type]) && (clicked == false)
 		{
 			global.inv[self_number][1] += global.inv[global.clicked][1];
 			global.inv[global.clicked] = [-1,-1];
 			global.clicked = -1;
 		}
+		
 		if (mouse_check_button_released(mb_left)) && (global.clicked != -1)
 		{
 			var _temp = global.inv[self_number]

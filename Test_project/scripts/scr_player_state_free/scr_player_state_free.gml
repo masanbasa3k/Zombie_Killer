@@ -8,7 +8,8 @@ function scr_player_state_free(){
 
 	var _closestObj = instance_nearest(x, y, par_entity);
 	var _closestObjDistance = point_distance(x, y, _closestObj.x, _closestObj.y)
-	if (_closestObjDistance <= 32)
+	var _hovering = position_meeting(mouse_x, mouse_y, _closestObj);
+	if (_closestObjDistance <= 32) && (_hovering)
 	{
 		_closestObj.drawLine = true;
 		if (_closestObj.entityTouchable)
@@ -37,6 +38,11 @@ function scr_player_state_free(){
 		}
 		else if (_closestObj.entityDestroyable) && (player_hand.cooldown == 0) && (keyUse) && (!player_hand.ranged[player_hand.state])
 		{
+			if (handHolding[holding_number] != HAND.free)
+			{
+				global.inv[holding_number][1] -= 1;
+				if (global.inv[holding_number][1] <= 0){global.inv[holding_number] = [-1,-1];}
+			}
 			_closestObj.entityHp -= player_hand.handDamage[player_hand.state];
 			player_hand.rotation = -70;
 			player_hand.cooldown = 20;

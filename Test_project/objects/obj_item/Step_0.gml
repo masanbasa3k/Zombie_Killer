@@ -5,40 +5,36 @@ if (place_meeting(x,y,obj_player))
 		if (global.inv[i][0] == -1)
 		{
 			global.inv[i][0] = itemType;
-			if (obj_item_manager.isWeapon[itemType]){global.inv[i][1] = -1;}
-			else{global.inv[i][1] = 1;}
+			if (obj_item_manager.isWeapon[itemType])
+			{
+				if (!obj_hand.ranged[obj_item_manager.weaponHandEnum[itemType]])
+				{
+					if (itemAmount == -1)
+					{
+						global.inv[i][1] = obj_hand.melee_wapon_durability[obj_item_manager.weaponHandEnum[itemType]];
+					}
+					else
+					{
+						global.inv[i][1] = itemAmount;
+					}
+				}
+				else
+				{
+					global.inv[i][1] = 0;
+				}
+			}
+			else
+			{
+				global.inv[i][1] = itemAmount;
+			}
 			instance_destroy();
 			break;
 		}
-		else if (global.inv[i][0] == itemType) && (global.inv[i][1] != -1)
+		else if (global.inv[i][0] == itemType) && (!obj_item_manager.isWeapon[itemType])
 		{
-			global.inv[i][1] += 1;
+			global.inv[i][1] += itemAmount;
 			instance_destroy();
 			break;
 		}
-	}	
+	}
 }
-	
-	
-exit;
-	var _itemPos = scr_item_pos(itemType);
-	
-	if (_itemPos == -1)
-	{
-		global.inv += [itemType,1];
-		instance_destroy();
-	}
-	else if (_itemPos != -1)
-	{
-		if (obj_item_manager.isWeapon[itemType])
-		{
-			global.inv += [itemType,1];
-			instance_destroy();
-		}
-		else
-		{
-			var _arr = global.inv[| _itemPos];
-			_arr[@ 1]++;
-			instance_destroy();
-		}
-	}

@@ -28,6 +28,13 @@ function scr_building_select_response(){
 			var _how_many_req = obj_item_manager.itemReq[_selected_item_number][i];
 			scr_remove_item_from_env_for_buildings(_how_many_req)
 		}
-		scr_instance_create_item(obj_buildings_inside_menu.building_x, obj_buildings_inside_menu.building_y, item_type);
+		if (obj_item_manager.isWeapon[item_type])
+		{
+			scr_instance_create_item(obj_buildings_inside_menu.building_x, obj_buildings_inside_menu.building_y, item_type, -1);
+		}
+		else
+		{
+			scr_instance_create_item(obj_buildings_inside_menu.building_x, obj_buildings_inside_menu.building_y, item_type);
+		}
 	}
 }
