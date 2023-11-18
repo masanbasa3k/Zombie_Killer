@@ -14,30 +14,46 @@ if (type == "Inventory")
 	{
 		global.inventoryMenu = true;
 		global.buildingMenu = false;
+		global.levelUpMenu = false;
 		global.settingsMenu = false;
 	}
 }
 
 if (type == "Building")
 {
-	x = (obj_camera.x - (RESOLUTION_W/2) + ((2)*100));
+	x = (obj_camera.x - (RESOLUTION_W/2) + ((2)*100)) + 8;
 	
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
 		global.inventoryMenu = false;
 		global.buildingMenu = true;
+		global.levelUpMenu = false;
+		global.settingsMenu = false;
+	}
+}
+
+if (type == "LevelUp")
+{
+	x = (obj_camera.x - (RESOLUTION_W/2) + ((3)*100)) + 16;
+	
+	if (hovering) && (mouse_check_button_pressed(mb_left))
+	{
+		global.inventoryMenu = false;
+		global.buildingMenu = false;
+		global.levelUpMenu = true;
 		global.settingsMenu = false;
 	}
 }
 
 if (type == "Settings")
 {
-	x = (obj_camera.x - (RESOLUTION_W/2) + ((3)*100));
+	x = (obj_camera.x - (RESOLUTION_W/2) + ((4)*100)) + 24;
 	
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
 		global.inventoryMenu = false;
 		global.buildingMenu = false;
+		global.levelUpMenu = false;
 		global.settingsMenu = true;
 	}
 }

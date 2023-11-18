@@ -13,7 +13,7 @@ else
 
 if (type == "Inventory")
 {
-	image_xscale = 2;
+	image_xscale = 1;
 	image_yscale = 1;
 	draw_sprite(spr_inventory_button,image_index,x,y)
 
@@ -21,16 +21,29 @@ if (type == "Inventory")
 
 if (type == "Building")
 {
-	image_xscale = 2;
+	image_xscale = 1;
 	image_yscale = 1;
 	draw_sprite(spr_buildings_button,image_index,x,y)
 
 }
 
+if (type == "LevelUp")
+{
+	image_xscale = 1;
+	image_yscale = 1;
+	if (global.player_has_level >= 1)
+	{draw_sprite(spr_level_up_has_level_button,image_index,x,y)}
+	else
+	{draw_sprite(spr_level_up_normal_button,image_index,x,y)}
+	
+
+}
+
 if (type == "Settings")
 {
-	image_xscale = 2;
+	image_xscale = 1;
 	image_yscale = 1;
 	draw_sprite(spr_settings_button,image_index,x,y)
 
 }
+

@@ -16,7 +16,7 @@ if (hand_slot)
 			if (clicked)
 			{draw_sprite_ext(item_spr,0,mouse_x,mouse_y,image_xscale,image_yscale,0,c_white,1)}
 			else
-			{draw_sprite_ext(item_spr,0,x+12,y+12,image_xscale,image_yscale,0,c_white,1)}
+			{draw_sprite_ext(item_spr,0,x+32,y+32,image_xscale,image_yscale,0,c_white,1)}
 			
 			//write number
 			if (obj_item_manager.isWeapon[item_type]) && (obj_hand.ranged[obj_item_manager.weaponHandEnum[item_type]])
@@ -47,7 +47,7 @@ if (hand_slot)
 			if (clicked)
 			{draw_sprite_ext(item_spr,0,mouse_x,mouse_y,image_xscale,image_yscale,0,c_white,1)}
 			else
-			{draw_sprite_ext(item_spr,0,x+24,y+24,image_xscale,image_yscale,0,c_white,1)}
+			{draw_sprite_ext(item_spr,0,x+32,y+32,image_xscale,image_yscale,0,c_white,1)}
 			
 			//write number
 			if (obj_item_manager.isWeapon[item_type]) && (obj_hand.ranged[obj_item_manager.weaponHandEnum[item_type]])
@@ -85,7 +85,7 @@ else{
 		if (clicked)
 		{draw_sprite_ext(item_spr,0,mouse_x,mouse_y,image_xscale,image_yscale,0,c_white,1)}
 		else
-		{draw_sprite_ext(item_spr,0,x+12,y+12,image_xscale,image_yscale,0,c_white,1)}
+		{draw_sprite_ext(item_spr,0,x+32,y+32,image_xscale,image_yscale,0,c_white,1)}
 		
 		//write number
 		if (obj_item_manager.isWeapon[item_type]) && (obj_hand.ranged[obj_item_manager.weaponHandEnum[item_type]])

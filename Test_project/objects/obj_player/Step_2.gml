@@ -1,5 +1,6 @@
 if (instance_exists(player_hand))
 {
+
 	player_hand.is_ranged_true = player_hand.ranged[handHolding[holding_number]]
 	player_hand.depth = depth-1;
 	player_hand.image_yscale = 1;

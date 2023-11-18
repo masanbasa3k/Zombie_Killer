@@ -28,6 +28,7 @@ if (global.MenuOpen == false)
 	global.inventoryMenu = false;
 	global.buildingMenu = false;
 	global.settingsMenu = false;
+	global.levelUpMenu = false;
 	obj_player.state = scr_player_state_free;
 }
 

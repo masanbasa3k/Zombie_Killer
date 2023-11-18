@@ -14,6 +14,7 @@ global.inventory = instance_create_layer(0,0,layer,obj_item_manager);
 
 global.building = instance_create_layer(0,0,layer,buildings);
 
+global.player_has_level = 1;
 
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
 room_goto(ROOM_START);
@@ -30,3 +31,7 @@ with (instance_create_layer(0,0,layer,obj_button)){type = "Building"}
 global.settingsMenu = false;
 instance_create_layer(0,0,layer,obj_button);
 with (instance_create_layer(0,0,layer,obj_button)){type = "Settings"}
+
+global.levelUpMenu = false;
+instance_create_layer(0,0,layer,obj_button);
+with (instance_create_layer(0,0,layer,obj_button)){type = "LevelUp"}

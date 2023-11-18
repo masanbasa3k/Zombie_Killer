@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_inventory_slot",
-    "path": "sprites/spr_inventory_slot/spr_inventory_slot.yy",
+    "name": "spr_buildings_button",
+    "path": "sprites/spr_buildings_button/spr_buildings_button.yy",
   },
   "spriteMaskId": null,
   "visible": true,
