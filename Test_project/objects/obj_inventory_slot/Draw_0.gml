@@ -57,7 +57,8 @@ if (hand_slot)
 			{draw_text_transformed(x+32,y+24,item_count,1,1,0)}
 			else
 			{
-				draw_text_transformed(x+16,y+12,"melee",1,1,0)
+				var _total_durability = string(obj_hand.melee_wapon_durability[obj_item_manager.weaponHandEnum[item_type]])
+				draw_text_transformed(x+16,y+12,string(item_count)+"/"+_total_durability,1,1,0)
 			}
 		}
 	}
@@ -94,7 +95,8 @@ else{
 		{draw_text_transformed(x+16,y+12,item_count,1,1,0)}
 		else
 		{
-			draw_text_transformed(x+16,y+12,"melee",1,1,0)
+			var _total_durability = string(obj_hand.melee_wapon_durability[obj_item_manager.weaponHandEnum[item_type]])
+			draw_text_transformed(x+16,y+12,string(item_count)+"/"+_total_durability,1,1,0)
 		}
 	}
 }

@@ -63,3 +63,4 @@ ranged_weapon_ammo_cone_size[HAND.rusty_boltAction] = [-6,6]
 ranged_weapon_ammo_range[HAND.rusty_boltAction] = 200;
 ranged_weapon_ammo_size[HAND.rusty_boltAction] = 10;
 ranged_weapon_is_auto[HAND.rusty_boltAction] = true;
+ranged_weapon_fire_rate_cooldown[HAND.rusty_boltAction] = 60;

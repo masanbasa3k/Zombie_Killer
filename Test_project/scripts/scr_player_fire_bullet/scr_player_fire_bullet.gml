@@ -4,7 +4,7 @@ function scr_player_fire_bullet(){
 	
 			player_hand.curvePos = 0;
 			player_hand.curveSpd = 0.05;
-			player_hand.cooldown = 20;
+			player_hand.cooldown = player_hand.ranged_weapon_fire_rate_cooldown[handHolding[holding_number]];
 			
 			var _bullet_type = player_hand.ranged_weapon_ammo_type[handHolding[holding_number]];
 			var _bullet_cone_size = player_hand.ranged_weapon_ammo_cone_size[handHolding[holding_number]];
