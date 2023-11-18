@@ -4,13 +4,13 @@ if (hand_slot)
 {
 	if (obj_item_manager.inventoryIsOpen)
 	{
-		x = (obj_camera.x - (RESOLUTION_W/2) + 100+((self_number)*32));
-		y = (obj_camera.y - (RESOLUTION_H/2) + 100-32);
+		x = (obj_camera.x - (RESOLUTION_W/2) + 100+((self_number)*48));
+		y = (obj_camera.y - (RESOLUTION_H/2) + 100)-32;
 	}
 	else
 	{
 		x = (obj_camera.x - (RESOLUTION_W/2) + _x) + (self_number * 24) + 160;
-		y = (obj_camera.y - (RESOLUTION_H/2) + _y) - 96 + 286;
+		y = (obj_camera.y - (RESOLUTION_H/2) + _y) - 112 + 286;
 	}
 }
 else
