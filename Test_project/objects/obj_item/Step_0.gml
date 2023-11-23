@@ -1,4 +1,29 @@
-if (place_meeting(x,y,obj_player))
+if (grounded == 1)
+{
+	vspd += jump
+	hspd += move_spd
+}
+
+if (vspd < 0)
+{
+	vspd = max(vspd, jump/jump_mod)
+}
+vspd += grav
+vspd = clamp(vspd, -vspd_max, vspd_max)
+
+if(y>spawn_y)
+{
+	grounded = 1;
+	vspd = 0;
+	hspd = 0;
+}
+else{grounded = 0;}
+
+y = y + sign(vspd)
+x = x + sign(hspd)
+
+
+if (place_meeting(x,y,obj_player)) && (grounded == 1)
 {	
 	for (var i=0; i<array_length(global.inv);i++)
 	{

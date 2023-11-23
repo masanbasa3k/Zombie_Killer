@@ -8,10 +8,10 @@ if (drawLine)
 	shader_set_uniform_f(handler,tex_w,tex_h);
 	shader_set_uniform_f(handler_1,1);//line thickness
 	shader_set_uniform_f(handler_2,255,255,255,1.0);//rgba
-	draw_sprite_part(spr_buildings, buildingType, 0, 0, 32, 32, x-16, y-16);
+	draw_sprite_part(spr_buildings, buildingType, 0, 0, 64, 64, x-32, y-32);
 	shader_reset();
 }
 else
 {
-	draw_sprite_part(spr_buildings, buildingType, 0, 0, 32, 32, x-16, y-16);
+	draw_sprite_part(spr_buildings, buildingType, 0, 0, 64, 64, x-32, y-32);
 }

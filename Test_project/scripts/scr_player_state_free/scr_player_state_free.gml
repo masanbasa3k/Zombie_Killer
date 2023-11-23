@@ -9,7 +9,7 @@ function scr_player_state_free(){
 	var _closestObj = instance_nearest(x, y, par_entity);
 	var _closestObjDistance = point_distance(x, y, _closestObj.x, _closestObj.y)
 	var _hovering = position_meeting(mouse_x, mouse_y, _closestObj);
-	if (_closestObjDistance <= 32) && (_hovering)
+	if (_closestObjDistance <= 64) && (_hovering)
 	{
 		_closestObj.drawLine = true;
 		if (_closestObj.entityTouchable)

@@ -30,6 +30,6 @@ select_building = -1;
 mx = 0;
 my = 0;
 
-cell_size = 32;
+cell_size = 64;
 player_x = 0;
 player_y = 0;

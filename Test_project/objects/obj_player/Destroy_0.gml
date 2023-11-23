@@ -1,2 +1,2 @@
-if instance_exists(item)
-{instance_destroy(item);}
+if instance_exists(player_hand)
+{instance_destroy(player_hand);}

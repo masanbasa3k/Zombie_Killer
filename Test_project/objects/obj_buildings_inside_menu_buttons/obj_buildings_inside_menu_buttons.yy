@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_inventory_slot",
-    "path": "sprites/spr_inventory_slot/spr_inventory_slot.yy",
+    "name": "spr_workbench_inside_buttons",
+    "path": "sprites/spr_workbench_inside_buttons/spr_workbench_inside_buttons.yy",
   },
   "spriteMaskId": null,
   "visible": true,

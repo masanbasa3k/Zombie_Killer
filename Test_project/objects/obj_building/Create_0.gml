@@ -1,8 +1,9 @@
 event_inherited();
-x += 16;
-y += 16;
-frameWidth = 32;
-frameHeight = 32;
+x += 32;
+y += 32;
+
+frameWidth = 64;
+frameHeight = 64;
 
 buildingType = 0;
 

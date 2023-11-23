@@ -1,8 +1,9 @@
 
+draw_self();
 if (hovering)
-{draw_circle(x,y,32,1)}
+{image_index = number*2+1;}
 else
-{draw_self();}
+{image_index = number*2;}
 
 item_type = buildings.buildingItem[obj_buildings_inside_menu.building_type][number]
 
