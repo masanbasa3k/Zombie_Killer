@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_enemy_collision",
+  "name": "scr_zombie_wander",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
