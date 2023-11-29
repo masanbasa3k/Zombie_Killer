@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_enemy_tile_collision(){
 	var _collision = false;
-	if (tilemap_get_at_pixel(Col,x+hSpeed,y))
+	if (tilemap_get_at_pixel(collisionMap,x+hSpeed,y))
 	{
 		x -= x mod TILE_SIZE;
 		if (sign(hSpeed) == 1) x += TILE_SIZE - 1;
@@ -11,7 +11,7 @@ function scr_enemy_tile_collision(){
 	}
 	x += hSpeed;
 	
-	if (tilemap_get_at_pixel(Col,x,y+vSpeed))
+	if (tilemap_get_at_pixel(collisionMap,x,y+vSpeed))
 	{
 		y -= y mod TILE_SIZE;
 		if (sign(vSpeed) == 1) y += TILE_SIZE - 1;

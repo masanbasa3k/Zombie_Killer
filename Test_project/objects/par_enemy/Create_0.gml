@@ -1,7 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-
 enemy_wander_distance = 32;
 enemy_speed = 0.5;
 
@@ -13,6 +12,15 @@ vSpeed = 0;
 xTo = xstart;
 yTo = ystart;
 dir = 0;
+aggro_check = 0;
+aggro_check_duration = 5;
+enemy_aggro_radius = 128;
+enemy_attack_radius = 32;
+state_target = state;
+state_previous = state;
+state_wait = 0;
+state_wait_duration = 0;
+
 time_passed  = 0;
 wait_duration = 60;
 wait = 0;
@@ -21,12 +29,11 @@ spr_idle = -1;
 spr_move = -1;
 
 enemy_script[ENEMYSTATE.IDLE] = -1;
-enemy_script[ENEMYSTATE.CASE] = -1;
+enemy_script[ENEMYSTATE.CHASE] = -1;
 enemy_script[ENEMYSTATE.WANDER] = -1;
 enemy_script[ENEMYSTATE.ATTACK] = -1;
 enemy_script[ENEMYSTATE.HURT] = -1;
 enemy_script[ENEMYSTATE.DIE] = -1;
-enemy_script[ENEMYSTATE.WAIT] = -1;
-
+enemy_script[ENEMYSTATE.WAIT] = scr_enemy_wait;
 
 

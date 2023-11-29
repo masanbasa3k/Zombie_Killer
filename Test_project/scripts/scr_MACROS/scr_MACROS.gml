@@ -9,7 +9,7 @@ enum ENEMYSTATE
 {
 	IDLE,
 	WANDER,
-	CASE,
+	CHASE,
 	ATTACK,
 	HURT,
 	DIE,

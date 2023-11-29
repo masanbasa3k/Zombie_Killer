@@ -17,24 +17,36 @@ function scr_zombie_wander(){
 		{
 			wait = 0;
 			time_passed = 0;
-			dir = point_direction(x,y,xstart,ystart) + irandom_range(-45,45)
-			xTo = lengthdir_x(enemy_wander_distance, dir)
-			yTo = lengthdir_y(enemy_wander_distance, dir)
+			dir = point_direction(x,y,xstart,ystart) + irandom_range(-45,45);
+			xTo = x + lengthdir_x(enemy_wander_distance, dir);
+			yTo = y + lengthdir_y(enemy_wander_distance, dir);
 		}
 	}
 	else
 	{
 		time_passed++;
+		image_speed = 1.0;
 		var _distance_to_go = point_distance(x,y,xTo,yTo);
 		var _speed_this_frame = enemy_speed;
 		if (_distance_to_go < enemy_speed) {_speed_this_frame = _distance_to_go}
 		dir = point_direction(x,y,xTo,yTo);
 		hSpeed = lengthdir_x(_speed_this_frame, dir);
 		vSpeed = lengthdir_y(_speed_this_frame, dir);
-		if (hSpeed != 0){image_xscale=sign(hSpeed);}
+		//if (hSpeed != 0){image_xscale=sign(hSpeed);}
 		
 		var _collided = scr_enemy_tile_collision();
-		
 	}
+	
+	if (++aggro_check >= aggro_check_duration)
+	{
+		aggro_check = 0;
+		if (instance_exists(obj_player)) && (point_distance(x,y,obj_player.x,obj_player.y)<= enemy_aggro_radius)
+		{
+			state = ENEMYSTATE.CHASE;
+			target = obj_player;
+			
+		}
+	}
+	
 
 }
