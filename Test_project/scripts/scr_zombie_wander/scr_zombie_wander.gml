@@ -5,13 +5,12 @@ function scr_zombie_wander(){
 	
 	if ((x == xTo) && (y == yTo)) || (time_passed > enemy_wander_distance / enemy_speed)
 	{
+		sprite_index = spr_idle;
 		hSpeed = 0;
 		vSpeed = 0;
-		if (image_index<1)
-		{
-			image_speed = 0.0;
-			image_index = 0;
-		}
+
+		image_speed = 0.0;
+		image_index = 0;
 		
 		if (++wait >= wait_duration)
 		{
@@ -25,14 +24,14 @@ function scr_zombie_wander(){
 	else
 	{
 		time_passed++;
-		image_speed = 1.0;
+		image_speed = .2;
 		var _distance_to_go = point_distance(x,y,xTo,yTo);
 		var _speed_this_frame = enemy_speed;
 		if (_distance_to_go < enemy_speed) {_speed_this_frame = _distance_to_go}
 		dir = point_direction(x,y,xTo,yTo);
 		hSpeed = lengthdir_x(_speed_this_frame, dir);
 		vSpeed = lengthdir_y(_speed_this_frame, dir);
-		//if (hSpeed != 0){image_xscale=sign(hSpeed);}
+		if (hSpeed != 0){image_xscale=sign(hSpeed);}
 		
 		var _collided = scr_enemy_tile_collision();
 	}

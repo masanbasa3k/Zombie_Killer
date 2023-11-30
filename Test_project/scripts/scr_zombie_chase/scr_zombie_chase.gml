@@ -7,7 +7,7 @@ function scr_zombie_chase(){
 		yTo = target.y;
 		
 		var _distance_to_go = point_distance(x,y,xTo,yTo);
-		image_speed = 1.0;
+		image_speed = .2;
 		dir = point_direction(x,y,xTo,yTo)
 		if (_distance_to_go > enemy_speed)
 		{

@@ -11,8 +11,8 @@ enemy_speed = 0.5;
 
 state = ENEMYSTATE.WANDER;
 
-spr_idle = spr_player;
-spr_move = spr_player_walk;
+spr_idle = spr_zombie;
+spr_move = spr_zombie_walk;
 spr_attack = spr_player_roll;
 
 enemy_script[ENEMYSTATE.WANDER] = scr_zombie_wander;

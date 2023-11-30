@@ -38,6 +38,8 @@
     {"name":"tiles","order":17,"path":"folders/Sprites/tiles.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Enemies","order":20,"path":"folders/Sprites/Enemies.yy",},
+    {"name":"normal_zombie","order":1,"path":"folders/Sprites/Enemies/normal_zombie.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_player_hands_pickaxe","order":4,"path":"sprites/spr_player_hands_pickaxe/spr_player_hands_pickaxe.yy",},
@@ -101,6 +103,7 @@
     {"name":"scr_player_collision","order":1,"path":"scripts/scr_player_collision/scr_player_collision.yy",},
     {"name":"tl_world","order":1,"path":"tilesets/tl_world/tl_world.yy",},
     {"name":"spr_medium_bullet_box","order":7,"path":"sprites/spr_medium_bullet_box/spr_medium_bullet_box.yy",},
+    {"name":"spr_zombie_walk","order":1,"path":"sprites/spr_zombie_walk/spr_zombie_walk.yy",},
     {"name":"rm_test","order":2,"path":"rooms/rm_test/rm_test.yy",},
     {"name":"tl_buildable","order":2,"path":"tilesets/tl_buildable/tl_buildable.yy",},
     {"name":"spr_tree","order":1,"path":"sprites/spr_tree/spr_tree.yy",},
