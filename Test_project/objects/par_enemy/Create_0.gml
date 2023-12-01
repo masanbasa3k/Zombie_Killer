@@ -16,8 +16,10 @@ aggro_check = 0;
 aggro_check_duration = 5;
 enemy_aggro_radius = 128;
 enemy_attack_radius = 32;
+
 state_target = state;
 state_previous = state;
+
 state_wait = 0;
 state_wait_duration = 0;
 

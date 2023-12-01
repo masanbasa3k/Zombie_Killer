@@ -1,7 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_zombie_chase(){
-	if (instance_exists(target))
+	sprite_index = spr_move;
+	image_speed = 1.0;
+	if (hSpeed != 0)
+	{
+		image_xscale = sign(hSpeed)
+	}
+	if (instance_exists(target)) && (point_distance(x,y,target.x,target.y) >= 32)
 	{
 		xTo = target.x;
 		yTo = target.y;
@@ -20,16 +26,21 @@ function scr_zombie_chase(){
 			vSpeed = lengthdir_y(_distance_to_go, dir);
 		}
 		scr_enemy_tile_collision();
-		
-		if (point_distance(x,y,target.x,target.y) <= enemy_attack_radius)
-		{
-			state = ENEMYSTATE.ATTACK;
-			sprite_index = spr_attack;
-			image_index = 0;
-			image_speed = 1.0;
-			xTo += lengthdir_x(8,dir);
-			yTo += lengthdir_y(8,dir);
-		}
 	}
+	else
+	{
+		sprite_index = spr_idle;
+		image_index = 0;
+		image_speed = 0;
+		hSpeed = 0;
+		vSpeed = 0;
+	}
+if (instance_exists(target)) && (point_distance(x,y,target.x,target.y) <= enemy_attack_radius)
+{
+	state = ENEMYSTATE.ATTACK;
+	sprite_index = spr_attack;
+	image_index = 0;
+	image_speed = 1.0;
+}
 	
 }

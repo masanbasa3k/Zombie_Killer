@@ -13,7 +13,7 @@ state = ENEMYSTATE.WANDER;
 
 spr_idle = spr_zombie;
 spr_move = spr_zombie_walk;
-spr_attack = spr_player_roll;
+spr_attack = spr_zombie_attack;
 
 enemy_script[ENEMYSTATE.WANDER] = scr_zombie_wander;
 enemy_script[ENEMYSTATE.CHASE] = scr_zombie_chase;
