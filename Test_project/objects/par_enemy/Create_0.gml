@@ -1,6 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
+_knockback = 0;
+
 enemy_wander_distance = 32;
 enemy_speed = 0.5;
 
