@@ -17,9 +17,11 @@ if (entityHp <= 0)
 	instance_destroy();
 }
 
-if(place_meeting(x,y,obj_player_damage)) && (entityDestroyable)
+if(place_meeting(x,y,obj_player_damage)) && (entityDestroyable) && (entityIsEnemy == false)
 {
+	
 	entityHp -= obj_player_damage.damage
+	flash = 1;
 	instance_destroy(obj_player_damage)
 	if (obj_player.handHolding[obj_player.holding_number] != HAND.free)
 	{

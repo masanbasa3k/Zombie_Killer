@@ -1,24 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (drawLine)
+if (flash != 0)
 {
-	shader_set(shd_outline);
-	var tex=sprite_get_texture(sprite_index,image_index);
-	var tex_w=texture_get_texel_width(tex);
-	var tex_h=texture_get_texel_height(tex);
-	shader_set_uniform_f(handler,tex_w,tex_h);
-	shader_set_uniform_f(handler_1,1);//line thickness
-	shader_set_uniform_f(handler_2,255,255,255,1.0);//rgba
-	draw_self();
-	shader_reset();
+	shader_set(shd_white_flash)
+	shader_set_uniform_f(uFlash, flash)
 }
-else
-{
-	draw_self();
-}
+
+draw_sprite_ext(sprite_index,image_index,floor(x),floor(y),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+
 
 if (entityHp < entityMaxHp)
 {
 	draw_healthbar(x-8,y+4,x+8,y+8,entityPC,c_gray,c_red,c_red,0,true,true);
 }
+
+if (shader_current() != -1) shader_reset();
