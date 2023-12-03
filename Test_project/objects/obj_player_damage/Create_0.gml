@@ -1,2 +1,2 @@
 damage = 0;
-_knockback = 10;
+knockback = 10;

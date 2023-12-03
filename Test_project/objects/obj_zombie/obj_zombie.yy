@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_zombie",
+    "path": "sprites/spr_zombie/spr_zombie.yy",
   },
   "spriteMaskId": {
     "name": "spr_player",

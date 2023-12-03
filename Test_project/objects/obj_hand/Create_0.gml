@@ -55,6 +55,11 @@ melee_wapon_durability[HAND.pickaxe] = 10;
 melee_wapon_durability[HAND.axe] = 10;
 melee_wapon_durability[HAND.chainsaw] = 10;
 
+melee_weapon_knockback[HAND.free] = 10;
+melee_weapon_knockback[HAND.pickaxe] = 10;
+melee_weapon_knockback[HAND.axe] = 10;
+melee_weapon_knockback[HAND.chainsaw] = 10;
+
 // rusty weapon
 ranged_weapon_ammo_type[HAND.rusty_boltAction] = BULLETS.medium_bullet;
 ranged_weapon_ammo_item[HAND.rusty_boltAction] = item.medium_ammo;

@@ -1,9 +1,13 @@
 
 entityPC = (entityHp / entityMaxHp) * 100;
 
+if (entityHp < entityMaxHp)
+{
+	draw_health = true;
+}
+
 if (entityHp <= 0)
 {
-	
 	if (array_length(entityDrop) == 1) && (entityDrop[0] != -1)
 	{scr_instance_create_item(x, y, entityDrop[0]);}
 	else
@@ -13,7 +17,6 @@ if (entityHp <= 0)
 			scr_instance_create_item(x, y, entityDrop[i]);
 		}
 	}
-	
 	instance_destroy();
 }
 

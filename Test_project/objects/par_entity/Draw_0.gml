@@ -10,7 +10,7 @@ if (flash != 0)
 draw_sprite_ext(sprite_index,image_index,floor(x),floor(y),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 
 
-if (entityHp < entityMaxHp)
+if (draw_health)
 {
 	draw_healthbar(x-8,y+4,x+8,y+8,entityPC,c_gray,c_red,c_red,0,true,true);
 }

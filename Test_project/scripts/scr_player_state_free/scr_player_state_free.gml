@@ -25,10 +25,12 @@ function scr_player_state_free(){
 			player_hand.rotation = -70;
 			player_hand.cooldown = 20;
 			var _damage = player_hand.handDamage[player_hand.state];
+			var _knockback = player_hand.melee_weapon_knockback[player_hand.state];
 			var _damage_box = instance_create_layer(x+(image_xscale*16),y,"World",obj_player_damage)
 			with(_damage_box)
 			{
 				damage = _damage
+				knockback = _knockback
 			}
 		}
 	}

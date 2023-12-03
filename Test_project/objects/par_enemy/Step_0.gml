@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_inherited();
+entityPC = (entityHp / entityMaxHp) * 100;
+if (entityHp < entityMaxHp)
+{
+	draw_health = true;
+}
 
 if (enemy_script[state] != -1) script_execute(enemy_script[state])
 depth = -bbox_bottom;
@@ -11,11 +15,13 @@ if(place_meeting(x,y,obj_player_damage)) && (entityDestroyable) && (entityIsEnem
 	if (state != ENEMYSTATE.DIE)
 	{
 		entityHp -= obj_player_damage.damage;
-		_knockback = obj_player_damage._knockback;
+		knockback = obj_player_damage.knockback;
+
 		flash = 1;
 		if (entityHp<=0)
 		{
 			state = ENEMYSTATE.DIE;
+			alarm[0] = 120;
 		}
 		else
 		{
@@ -23,12 +29,11 @@ if(place_meeting(x,y,obj_player_damage)) && (entityDestroyable) && (entityIsEnem
 			state = ENEMYSTATE.HURT;
 		}
 		image_index = 0;
-		if (_knockback != 0)
+		if (knockback != 0)
 		{
-			var _knock_direction = point_direction(x,y,(_source.x),(_source.y))
-			xTo = x - lengthdir_x(_knockback, _knock_direction)
-			yTo = y - lengthdir_y(_knockback, _knock_direction)
-
+			var _knock_direction = point_direction(x,y,(obj_player.x),(obj_player.y))
+			xTo = x - lengthdir_x(knockback, _knock_direction)
+			yTo = y - lengthdir_y(knockback, _knock_direction)
 		}
 	}
 	
