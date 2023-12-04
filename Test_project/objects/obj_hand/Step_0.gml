@@ -12,7 +12,7 @@ if (keyboard_check_pressed(ord("F"))) && (_ammo_box_have)
 		var _count = _arr[1];
 		if (_item < array_length(obj_item_manager.weaponHandEnum))
 		{
-			if (obj_item_manager.weaponHandEnum[_item] == _player_hand)
+			if (_item != -1) && (obj_item_manager.weaponHandEnum[_item] == _player_hand)
 			{
 				global.inv[i][1] = ranged_weapon_ammo_speed[_player_hand]
 				scr_remove_item_from_env_for_buildings([_bullet_item,1])

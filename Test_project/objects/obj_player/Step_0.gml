@@ -20,7 +20,7 @@ keyRun = keyboard_check(vk_shift);
 inputDirection = point_direction(0, 0, keyRight-keyLeft, keyDown-keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 
-if (!global.gamePaused) {script_execute(state);}
+script_execute(state);
 
 
 if (global.inv[0][0] != -1)&&(obj_item_manager.isWeapon[global.inv[0][0]]){handHolding[0] = obj_item_manager.weaponHandEnum[global.inv[0][0]];}

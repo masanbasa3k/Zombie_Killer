@@ -9,6 +9,7 @@ for (var i = 0; i < bullet_count[bullet_type]; i++)
 		speed = other.bullet_speed;
 		image_xscale = max(1,speed/sprite_width)
 		damage = other.bullet_damage[other.bullet_type];
+		knockback = other.bullet_knockback[other.bullet_type];
 		range = other.bullet_range;
 	}
 }

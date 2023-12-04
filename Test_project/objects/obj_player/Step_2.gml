@@ -24,13 +24,10 @@ if (instance_exists(player_hand))
 				var _arr = global.inv[i]
 				var _item = _arr[0];
 				var _count = _arr[1];
-				if (obj_item_manager.weaponHandEnum[_item] == handHolding[holding_number])
+				if (_item != -1) && (_count != 0) && (obj_item_manager.weaponHandEnum[_item] == handHolding[holding_number])
 				{
-					if (global.inv[i][1] > 0)
-					{
-						global.inv[i][1] -= 1
-						scr_player_fire_bullet();
-					}
+					global.inv[i][1] -= 1
+					scr_player_fire_bullet();
 					break;
 				}
 			}

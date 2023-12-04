@@ -32,7 +32,7 @@ handSprite[HAND.axe] = spr_player_hands_axe;
 handSprite[HAND.chainsaw] = spr_player_hands_chainsaw;
 handSprite[HAND.rusty_boltAction] = spr_rusty_boltAction;
 
-handDamage[HAND.free] = 100;
+handDamage[HAND.free] = 10;
 handDamage[HAND.pickaxe] = 6;
 handDamage[HAND.axe] = 5;
 handDamage[HAND.chainsaw] = 10;
