@@ -21,8 +21,8 @@ buildingMenuItem[building.furnace] = [3, 7, 8];// coal
 buildingItem[building.furnace] = [item.coal, item.iron_bar, item.gold_bar];// coal
 
 buildingMenu[building.table] = ["Table"]
-buildingMenuItem[building.table] = [4,5];
-buildingItem[building.table] = [item.axe, item.pickaxe];
+buildingMenuItem[building.table] = [4,5,15,16];
+buildingItem[building.table] = [item.wooden_axe, item.wooden_pickaxe, item.stone_axe, item.stone_pickaxe];
 
 inBuilding = false;
 select_building = -1;
