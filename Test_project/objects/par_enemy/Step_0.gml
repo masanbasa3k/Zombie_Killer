@@ -19,6 +19,18 @@ else
 	mask_index = -1;
 }
 
+if (state == ENEMYSTATE.CHASE)
+{
+	enemy_speed = 1;
+	image_speed = .3;
+}
+else
+{	
+	if (state != ENEMYSTATE.DIE){
+	enemy_speed = 0.5;
+	image_speed = .2;}
+}
+
 if(my_collision.take_damage) && (entityDestroyable) && (entityIsEnemy == true)
 {
 	my_collision.take_damage = false;
