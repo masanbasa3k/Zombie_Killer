@@ -1,5 +1,6 @@
 var _player_hand = obj_player.handHolding[obj_player.holding_number]
 var _bullet_item = ranged_weapon_ammo_item[_player_hand]
+var _ammo_max_size = ranged_weapon_ammo_size[_player_hand]
 var _ammo_box_have = scr_check_item_have([_bullet_item,1])
 
 if (keyboard_check_pressed(ord("F"))) && (_ammo_box_have)
@@ -12,9 +13,9 @@ if (keyboard_check_pressed(ord("F"))) && (_ammo_box_have)
 		var _count = _arr[1];
 		if (_item < array_length(obj_item_manager.weaponHandEnum))
 		{
-			if (_item != -1) && (obj_item_manager.weaponHandEnum[_item] == _player_hand)
+			if (_item != -1) && (obj_item_manager.weaponHandEnum[_item] == _player_hand) && (global.inv[i][1] < _ammo_max_size)
 			{
-				global.inv[i][1] = ranged_weapon_ammo_speed[_player_hand]
+				global.inv[i][1] += 10;
 				scr_remove_item_from_env_for_buildings([_bullet_item,1])
 				break;
 			}

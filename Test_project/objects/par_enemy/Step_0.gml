@@ -31,7 +31,7 @@ else
 	image_speed = .2;}
 }
 
-if(my_collision.take_damage) && (entityDestroyable) && (entityIsEnemy == true)
+if (instance_exists(my_collision)) &&(my_collision.take_damage) && (entityDestroyable) && (entityIsEnemy == true)
 {
 	my_collision.take_damage = false;
 	if (state != ENEMYSTATE.DIE)
@@ -44,6 +44,7 @@ if(my_collision.take_damage) && (entityDestroyable) && (entityIsEnemy == true)
 		{
 			state = ENEMYSTATE.DIE;
 			alarm[0] = 240;
+			instance_destroy(my_collision)
 		}
 		else
 		{
