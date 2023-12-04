@@ -1,12 +1,12 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_zombie",
-  "bbox_bottom": 57,
-  "bbox_left": 0,
-  "bbox_right": 21,
-  "bbox_top": 44,
-  "bboxMode": 2,
+  "name": "spr_zombie_mask_index",
+  "bbox_bottom": 53,
+  "bbox_left": 2,
+  "bbox_right": 19,
+  "bbox_top": 2,
+  "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
@@ -20,7 +20,7 @@
   "height": 56,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9fc8482a-b134-480a-8e50-c0effcb4f14a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9fc8482a-b134-480a-8e50-c0effcb4f14a","blendMode":0,"displayName":"default","isLocked":false,"opacity":44.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_zombie",
+    "name": "spr_zombie_mask_index",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1a97b51d-1f2b-41ff-a6da-58e4fc6e27bb","path":"sprites/spr_zombie/spr_zombie.yy",},},},"Disabled":false,"id":"6c2430ff-4942-4afa-b3a4-5c2816dc4e4a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1a97b51d-1f2b-41ff-a6da-58e4fc6e27bb","path":"sprites/spr_zombie_mask_index/spr_zombie_mask_index.yy",},},},"Disabled":false,"id":"69445b18-20c0-43e2-803b-5a31019ea682","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

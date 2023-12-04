@@ -10,18 +10,28 @@ if (entityHp < entityMaxHp)
 if (enemy_script[state] != -1) script_execute(enemy_script[state])
 depth = -bbox_bottom;
 
-if(place_meeting(x,y,obj_player_damage)) && (entityDestroyable) && (entityIsEnemy == true)
+if (state != ENEMYSTATE.DIE)
 {
+	mask_index = spr_idle;
+}
+else
+{
+	mask_index = -1;
+}
+
+if(my_collision.take_damage) && (entityDestroyable) && (entityIsEnemy == true)
+{
+	my_collision.take_damage = false;
 	if (state != ENEMYSTATE.DIE)
 	{
-		entityHp -= obj_player_damage.damage;
-		knockback = obj_player_damage.knockback;
+		entityHp -= my_collision.damage;
+		knockback = my_collision.knockback;
 
 		flash = 1;
 		if (entityHp<=0)
 		{
 			state = ENEMYSTATE.DIE;
-			alarm[0] = 120;
+			alarm[0] = 240;
 		}
 		else
 		{
@@ -36,13 +46,7 @@ if(place_meeting(x,y,obj_player_damage)) && (entityDestroyable) && (entityIsEnem
 			yTo = y - lengthdir_y(knockback, _knock_direction)
 		}
 	}
-	
-	instance_destroy(obj_player_damage)
-	if (obj_player.handHolding[obj_player.holding_number] != HAND.free)
-	{
-		global.inv[obj_player.holding_number][1] -= 1;
-		if (global.inv[obj_player.holding_number][1] <= 0){global.inv[obj_player.holding_number] = [-1,-1];}
-	}
+	instance_destroy(obj_bullet)
 }
 
 

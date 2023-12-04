@@ -18,6 +18,7 @@ function scr_remove_item_from_env_for_buildings(){
 				global.inv[i] = [-1,-1]
 			}
 			else{global.inv[i][1] -= _req_item_count;}
+			break;
 		}
 	}
 }

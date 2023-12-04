@@ -41,3 +41,4 @@ enemy_script[ENEMYSTATE.DIE] = -1;
 enemy_script[ENEMYSTATE.WAIT] = scr_enemy_wait;
 
 
+my_collision = -1;
