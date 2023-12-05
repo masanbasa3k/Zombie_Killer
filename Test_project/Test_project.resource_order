@@ -76,6 +76,7 @@
     {"name":"scr_player_state_locked","order":3,"path":"scripts/scr_player_state_locked/scr_player_state_locked.yy",},
     {"name":"scr_script_execute_array","order":1,"path":"scripts/scr_script_execute_array/scr_script_execute_array.yy",},
     {"name":"spr_grass_tiles","order":1,"path":"sprites/spr_grass_tiles/spr_grass_tiles.yy",},
+    {"name":"spr_64px_coll","order":4,"path":"sprites/spr_64px_coll/spr_64px_coll.yy",},
     {"name":"spr_buildings_button","order":1,"path":"sprites/spr_buildings_button/spr_buildings_button.yy",},
     {"name":"scr_enemy_tile_collision","order":1,"path":"scripts/scr_enemy_tile_collision/scr_enemy_tile_collision.yy",},
     {"name":"obj_building_menu","order":2,"path":"objects/obj_building_menu/obj_building_menu.yy",},
@@ -134,6 +135,7 @@
     {"name":"obj_button","order":5,"path":"objects/obj_button/obj_button.yy",},
     {"name":"spr_zombie_dead","order":4,"path":"sprites/spr_zombie_dead/spr_zombie_dead.yy",},
     {"name":"obj_building","order":1,"path":"objects/obj_building/obj_building.yy",},
+    {"name":"spr_32px_coll","order":5,"path":"sprites/spr_32px_coll/spr_32px_coll.yy",},
     {"name":"obj_item","order":1,"path":"objects/obj_item/obj_item.yy",},
   ],
 }

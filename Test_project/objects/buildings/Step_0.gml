@@ -7,7 +7,7 @@ if (inBuilding) && (select_building != -1)
 	mx = mouse_x;
 	my = mouse_y;
 	
-	var _cs = cell_size;
+	var _cs = cell_size[select_building];
 	var _gx = (mx div _cs);
 	var _gy = (my div _cs);
 	
@@ -19,11 +19,13 @@ if (inBuilding) && (select_building != -1)
 	var _dist = sqrt(power(mx - player_x,2) + power(my - player_y,2));
 	
 	var _cell = ds_buildings_instances[# _gx, _gy];
+	show_debug_message(_cell)
 	if (_cell == 0)
 	{
 	var _lay_id = layer_get_id("T_buildable_ground");
 	var _map_id = layer_tilemap_get_id(_lay_id);
 	var _data = tilemap_get_at_pixel(_map_id, mx, my);
+	show_debug_message(_data)
 	if (_data != 0)
 	{
 
@@ -53,7 +55,8 @@ if (inBuilding) && (select_building != -1)
 			var _how_many_req = buildingReq[select_building][i];
 			scr_remove_item_from_env_for_buildings(_how_many_req)
 		}
-		scr_instance_create_building(mx, my, select_building);
+		if (_cs == 32){scr_instance_create_building(mx-32, my-32, select_building);}
+		else{scr_instance_create_building(mx, my, select_building);}
 	}
 	}
 	}

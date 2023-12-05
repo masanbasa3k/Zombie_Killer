@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_instance_create_building(){
-	var _cs = buildings.cell_size;
+	var _cs = buildings.cell_size[argument2];
 	var _gx = argument0 div _cs;
 	var _gy = argument1 div _cs;
 	var _i_grid = buildings.ds_buildings_instances;
@@ -24,10 +24,12 @@ function scr_instance_create_building(){
 		
 		var _inst = instance_create_layer(_xx, _yy, "Buildings", obj_building);
 		_i_grid[# _gx, _gy] = _inst;
+		
 	
 		with (_inst)
 		{
 			buildingType = argument2;
+			cell_size = _cs;
 		
 		}
 		return _inst;

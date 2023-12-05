@@ -1,10 +1,15 @@
 event_inherited();
-x += 32;
-y += 32;
 
-frameWidth = 64;
-frameHeight = 64;
+
+xTo = x;
+yTo = y;
+
+cell_size = 0;
+
+frameWidth = 0;
+frameHeight = 0;
 
 buildingType = 0;
+
 
 

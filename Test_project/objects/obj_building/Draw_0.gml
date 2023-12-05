@@ -13,5 +13,9 @@ if (drawLine)
 }
 else
 {
-	draw_sprite_part(spr_buildings, buildingType, 0, 0, 64, 64, x-32, y-32);
+	if (cell_size==32)
+	{draw_sprite_part(spr_buildings, buildingType, 0, 0, 64, 64, x-32, y-32);}
+	else if (cell_size==64)
+	{draw_sprite_part(spr_buildings, buildingType, 0, 0, 64, 64, x-32, y-32);}
+	
 }

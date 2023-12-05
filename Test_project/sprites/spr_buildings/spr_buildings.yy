@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"84d9dcea-fd95-46ba-aebd-0c59bc3da0a9",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77d203a5-23bb-43ed-9f87-831e9c7868e0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4160bade-ab79-4e5d-9151-6f49f1b60615",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,6 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"84d9dcea-fd95-46ba-aebd-0c59bc3da0a9","path":"sprites/spr_buildings/spr_buildings.yy",},},},"Disabled":false,"id":"8dcaaa85-f359-46e0-9daf-98b9ae6f383a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"77d203a5-23bb-43ed-9f87-831e9c7868e0","path":"sprites/spr_buildings/spr_buildings.yy",},},},"Disabled":false,"id":"00415787-fdce-444e-ad51-44239ca1749b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4160bade-ab79-4e5d-9151-6f49f1b60615","path":"sprites/spr_buildings/spr_buildings.yy",},},},"Disabled":false,"id":"447be18d-b6ff-40c9-a528-64577727a322","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

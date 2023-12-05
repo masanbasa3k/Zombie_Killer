@@ -1,7 +1,7 @@
 layer_set_visible("T_buildable_ground", 0)
 if (!inBuilding) || (select_building == -1) exit;
 
-var _cs = cell_size;
+var _cs = cell_size[select_building];
 var _gx = (mx div _cs);
 var _gy = (my div _cs);
 var _dist = sqrt(power(mx - player_x,2) + power(my - player_y,2));
@@ -25,11 +25,12 @@ var _yy = _gy*_cs;
 // draw green light
 draw_rectangle_color(_xx, _yy, _xx+_cs, _yy+_cs, _c, _c, _c ,_c, true);
 
-draw_sprite(spr_buildings, select_building, _xx+(_cs/2), _yy+(_cs/2));
+if (_cs == 32){draw_sprite(spr_buildings, select_building, _xx+(_cs/2), _yy+(_cs/2)-16);}
+else{draw_sprite(spr_buildings, select_building, _xx+(_cs/2), _yy+(_cs/2));}
 
 // draw lines
 var _xx = 0;
-var _cs = 16;
+var _cs = 32;
 
 draw_set_alpha(0.1);
 
