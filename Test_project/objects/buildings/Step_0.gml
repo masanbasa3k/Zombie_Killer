@@ -65,7 +65,7 @@ if (create_buttons)
 {
 	for (var i = 0; i < sprite_get_number(spr_buildings); i++)
 	{
-		with(instance_create_depth(RESOLUTION_W-64,64+i*64,-999,obj_buildings_buttons))
+		with(instance_create_depth(RESOLUTION_W-64,64+(i*64),-999,obj_buildings_buttons))
 		{
 			building_number = i;
 		}

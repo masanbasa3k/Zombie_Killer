@@ -99,4 +99,4 @@ ranged_weapon_ammo_cone_size[HAND.heavy_full_auto_m1] = [-1,1]
 ranged_weapon_ammo_range[HAND.heavy_full_auto_m1] = 400;
 ranged_weapon_ammo_size[HAND.heavy_full_auto_m1] = 30;
 ranged_weapon_is_auto[HAND.heavy_full_auto_m1] = true;
-ranged_weapon_fire_rate_cooldown[HAND.heavy_full_auto_m1] = 10;
+ranged_weapon_fire_rate_cooldown[HAND.heavy_full_auto_m1] = 5;
