@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_zombie_hurt(){
+	enemy_speed = 0.5;
+	image_speed = .2;
 	sprite_index = spr_hurt;
 	var _enemy_speed = enemy_speed*(knockback/10)
 	var _distance_to_go = point_distance(x,y,xTo,yTo)

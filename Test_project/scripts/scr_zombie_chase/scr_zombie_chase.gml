@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_zombie_chase(){
+	enemy_speed = 1;
+	image_speed = .3;
 	sprite_index = spr_move;
 	if (hSpeed != 0)
 	{

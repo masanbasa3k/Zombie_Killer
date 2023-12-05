@@ -5,24 +5,30 @@ if instance_exists(my_collision)
 	my_collision.x = x;
 	my_collision.y = y;
 	
-	with(my_collision)
+	with(obj_player_damage)
 	{
-		if (place_meeting(x,y,obj_player_damage))
+		if (place_meeting(x,y,other.my_collision))
 		{
-			take_damage = true;
-			damage = obj_player_damage.damage;
-			knockback = obj_player_damage.damage;
+			instance_destroy();
+			other.my_collision.take_damage = true;
+			other.my_collision.damage = damage;
+			other.my_collision.knockback = damage;
 			if (obj_player.handHolding[obj_player.holding_number] != HAND.free)
 			{
 				global.inv[obj_player.holding_number][1] -= 1;
 				if (global.inv[obj_player.holding_number][1] <= 0){global.inv[obj_player.holding_number] = [-1,-1];}
 			}
 		}
-		else if (place_meeting(x,y,obj_bullet))
+	}
+	
+	with(obj_bullet)
+	{
+		if (place_meeting(x,y,other.my_collision))
 		{
-			take_damage = true;
-			damage = obj_bullet.damage;
-			knockback = obj_bullet.damage;
+			other.my_collision.take_damage = true;
+			other.my_collision.damage = damage;
+			other.my_collision.knockback = damage;
+			instance_destroy();
 		}
 	}
 }

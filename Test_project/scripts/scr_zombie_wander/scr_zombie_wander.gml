@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_zombie_wander(){
 	sprite_index = spr_move;
+	enemy_speed = 0.5;
+	image_speed = .2;
 	
 	if ((x == xTo) && (y == yTo)) || (time_passed > enemy_wander_distance / enemy_speed)
 	{

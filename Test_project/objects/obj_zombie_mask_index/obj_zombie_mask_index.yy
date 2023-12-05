@@ -35,5 +35,5 @@
     "name": "spr_zombie_mask_index",
     "path": "sprites/spr_zombie_mask_index/spr_zombie_mask_index.yy",
   },
-  "visible": true,
+  "visible": false,
 }

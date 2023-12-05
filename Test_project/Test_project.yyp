@@ -154,6 +154,7 @@
     {"id":{"name":"scr_screen_shake","path":"scripts/scr_screen_shake/scr_screen_shake.yy",},},
     {"id":{"name":"scr_player_collision","path":"scripts/scr_player_collision/scr_player_collision.yy",},},
     {"id":{"name":"obj_player_damage","path":"objects/obj_player_damage/obj_player_damage.yy",},},
+    {"id":{"name":"spr_buildings_inside_menu","path":"sprites/spr_buildings_inside_menu/spr_buildings_inside_menu.yy",},},
     {"id":{"name":"tl_col","path":"tilesets/tl_col/tl_col.yy",},},
     {"id":{"name":"spr_medium_bullet_box","path":"sprites/spr_medium_bullet_box/spr_medium_bullet_box.yy",},},
     {"id":{"name":"scr_check_item_have","path":"scripts/scr_check_item_have/scr_check_item_have.yy",},},

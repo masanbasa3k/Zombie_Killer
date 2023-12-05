@@ -19,17 +19,6 @@ else
 	mask_index = -1;
 }
 
-if (state == ENEMYSTATE.CHASE)
-{
-	enemy_speed = 1;
-	image_speed = .3;
-}
-else
-{	
-	if (state != ENEMYSTATE.DIE){
-	enemy_speed = 0.5;
-	image_speed = .2;}
-}
 
 if (instance_exists(my_collision)) &&(my_collision.take_damage) && (entityDestroyable) && (entityIsEnemy == true)
 {
@@ -59,7 +48,6 @@ if (instance_exists(my_collision)) &&(my_collision.take_damage) && (entityDestro
 			yTo = y - lengthdir_y(knockback, _knock_direction)
 		}
 	}
-	instance_destroy(obj_bullet)
 }
 
 
