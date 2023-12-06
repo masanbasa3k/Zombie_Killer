@@ -140,6 +140,7 @@
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},},
     {"id":{"name":"scr_player_state_roll","path":"scripts/scr_player_state_roll/scr_player_state_roll.yy",},},
     {"id":{"name":"temp","path":"scripts/temp/temp.yy",},},
+    {"id":{"name":"scr_write_to_griding","path":"scripts/scr_write_to_griding/scr_write_to_griding.yy",},},
     {"id":{"name":"par_enemy","path":"objects/par_enemy/par_enemy.yy",},},
     {"id":{"name":"scr_player_animate_sprite","path":"scripts/scr_player_animate_sprite/scr_player_animate_sprite.yy",},},
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},},

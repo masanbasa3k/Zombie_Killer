@@ -18,8 +18,6 @@ if (inBuilding) && (select_building != -1)
 	}
 	var _dist = sqrt(power(mx - player_x,2) + power(my - player_y,2));
 	
-	var _cell = ds_buildings_instances[# _gx, _gy];
-	
 	var _gx32 = (mx div 32);
 	var _gy32 = (my div 32);
 	var _cell32 = ds_buildings_instances[# _gx32, _gy32];
@@ -27,7 +25,8 @@ if (inBuilding) && (select_building != -1)
 	var _gx64= (mx div 64);
 	var _gy64 = (my div 64);
 	var _cell64 = ds_buildings_instances[# _gx64, _gy64];
-
+	show_debug_message("cell32:"+string(_cell32))
+	show_debug_message("cell64:"+string(_cell64))
 	if (_cell32 == 0) && (_cell64 == 0)
 	{
 		var _lay_id = layer_get_id("T_buildable_ground");
@@ -35,7 +34,7 @@ if (inBuilding) && (select_building != -1)
 		var _data = tilemap_get_at_pixel(_map_id, mx, my);
 		if (_data != 0)
 		{
-
+			
 			var _list_of_true = []
 			_allOnes = true;
 	

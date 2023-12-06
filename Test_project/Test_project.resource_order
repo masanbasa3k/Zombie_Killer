@@ -106,6 +106,7 @@
     {"name":"obj_tree","order":1,"path":"objects/obj_tree/obj_tree.yy",},
     {"name":"scr_player_state_roll","order":4,"path":"scripts/scr_player_state_roll/scr_player_state_roll.yy",},
     {"name":"temp","order":8,"path":"scripts/temp/temp.yy",},
+    {"name":"scr_write_to_griding","order":5,"path":"scripts/scr_write_to_griding/scr_write_to_griding.yy",},
     {"name":"spr_rock","order":1,"path":"sprites/spr_rock/spr_rock.yy",},
     {"name":"scr_new_building_menu_box","order":2,"path":"scripts/scr_new_building_menu_box/scr_new_building_menu_box.yy",},
     {"name":"spr_stone_pickaxe","order":1,"path":"sprites/spr_stone_pickaxe/spr_stone_pickaxe.yy",},
