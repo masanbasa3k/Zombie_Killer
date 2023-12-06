@@ -9,9 +9,16 @@ var _dist = sqrt(power(mx - player_x,2) + power(my - player_y,2));
 
 // what is in the cell
 var _c = c_red;
-var _cell = ds_buildings_instances[# _gx, _gy];
 
-if (_cell == 0)
+var _gx32 = (mx div 32);
+var _gy32 = (my div 32);
+var _cell32 = ds_buildings_instances[# _gx32, _gy32];
+
+var _gx64 = (mx div 64);
+var _gy64 = (my div 64);
+var _cell64 = ds_buildings_instances[# _gx64, _gy64];
+
+if (_cell32 == 0) && (_cell64 == 0)
 {
 	var _lay_id = layer_get_id("T_buildable_ground");
 	var _map_id = layer_tilemap_get_id(_lay_id);
@@ -25,12 +32,12 @@ var _yy = _gy*_cs;
 // draw green light
 draw_rectangle_color(_xx, _yy, _xx+_cs, _yy+_cs, _c, _c, _c ,_c, true);
 
-if (_cs == 32){draw_sprite(spr_buildings, select_building, _xx+(_cs/2), _yy+(_cs/2)-16);}
-else{draw_sprite(spr_buildings, select_building, _xx+(_cs/2), _yy+(_cs/2));}
+if (_cs==32){draw_sprite(spr_all_buildings, select_building, _xx+(_cs/2), _yy+(_cs/2)-16);}
+else{draw_sprite(spr_all_buildings, select_building, _xx+(_cs/2), _yy+(_cs/2));}
 
 // draw lines
 var _xx = 0;
-var _cs = 32;
+var _cs = cell_size[select_building];
 
 draw_set_alpha(0.1);
 

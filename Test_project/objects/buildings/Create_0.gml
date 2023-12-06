@@ -6,18 +6,21 @@ enum building{
 	furnace,
 	table,
 	wooden_wall,
+	stone_wall,
 }
 
 /// buildings cost
 buildingReq[building.furnace] = [[item.rock, 1], [item.coal, 1]];
 buildingReq[building.table] = [[item.wood, 1]];
 buildingReq[building.wooden_wall] = [[item.wood, 1]];
+buildingReq[building.stone_wall] = [[item.rock, 1]];
 
 
 /// buildings drop
 buildingDrop[building.furnace] = [[item.rock, 3], [item.coal, 2]];
 buildingDrop[building.table] = [[item.wood, 2]];
 buildingDrop[building.wooden_wall] = [[item.wood, 2]];
+buildingDrop[building.stone_wall] = [[item.wood, 2]];
 
 
 /// buildings makeable items
@@ -30,10 +33,13 @@ buildingMenuItem[building.table] = [4,5,15,16];
 buildingItem[building.table] = [item.wooden_axe, item.wooden_pickaxe, item.stone_axe, item.stone_pickaxe];
 
 buildingMenu[building.wooden_wall] = ["Wooden Wall"]
+buildingMenu[building.stone_wall] = ["Stone Wall"]
+
 
 cell_size[building.furnace] = 64;
 cell_size[building.table] = 64;
 cell_size[building.wooden_wall] = 32;
+cell_size[building.stone_wall] = 32;
 
 
 inBuilding = false;

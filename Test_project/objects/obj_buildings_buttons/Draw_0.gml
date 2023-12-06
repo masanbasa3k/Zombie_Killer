@@ -38,5 +38,5 @@ else
 {
 	draw_sprite_ext(spr_inventory_slot,0,x,y,1,1,0,c_white,1);
 }
-draw_sprite_ext(spr_buildings,building_number,x+32,y+30,0.5,0.5,0,c_white,1);
+draw_sprite_ext(spr_all_buildings,building_number,x+32,y+30,0.5,0.5,0,c_white,1);
 

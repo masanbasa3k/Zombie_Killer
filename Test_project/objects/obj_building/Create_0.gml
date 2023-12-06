@@ -1,13 +1,11 @@
 event_inherited();
 
 
-xTo = x;
-yTo = y;
+cell_size = 64;
 
-cell_size = 0;
 
-frameWidth = 0;
-frameHeight = 0;
+frameWidth = 64;
+frameHeight = 64;
 
 buildingType = 0;
 

@@ -1,10 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_building",
+  "name": "obj_building_wall",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
@@ -36,8 +37,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_buildings",
-    "path": "sprites/spr_buildings/spr_buildings.yy",
+    "name": "spr_buildings_walls",
+    "path": "sprites/spr_buildings_walls/spr_buildings_walls.yy",
   },
   "spriteMaskId": null,
   "visible": true,
