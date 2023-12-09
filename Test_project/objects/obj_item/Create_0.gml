@@ -1,3 +1,5 @@
+image_speed = 0
+
 itemType = -1;
 itemAmount = -1;
 

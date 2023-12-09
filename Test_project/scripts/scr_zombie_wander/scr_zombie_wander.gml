@@ -34,8 +34,7 @@ function scr_zombie_wander(){
 		hSpeed = lengthdir_x(_speed_this_frame, dir);
 		vSpeed = lengthdir_y(_speed_this_frame, dir);
 		if (hSpeed != 0){image_xscale=sign(hSpeed);}
-		
-		var _collided = scr_enemy_tile_collision();
+		scr_enemy_tile_collision();
 	}
 	
 	if (++aggro_check >= aggro_check_duration)

@@ -25,8 +25,6 @@ if (inBuilding) && (select_building != -1)
 	var _gx64= (mx div 64);
 	var _gy64 = (my div 64);
 	var _cell64 = ds_buildings_instances[# _gx64, _gy64];
-	show_debug_message("cell32:"+string(_cell32))
-	show_debug_message("cell64:"+string(_cell64))
 	if (_cell32 == 0) && (_cell64 == 0)
 	{
 		var _lay_id = layer_get_id("T_buildable_ground");

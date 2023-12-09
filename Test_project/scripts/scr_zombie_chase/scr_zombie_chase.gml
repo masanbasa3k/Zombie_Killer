@@ -56,12 +56,11 @@ function scr_zombie_chase(){
 			state = ENEMYSTATE.WANDER;
 		}
 	}
-if (instance_exists(target)) && (point_distance(x,y,target.x,target.y) <= enemy_attack_radius)
-{
-	state = ENEMYSTATE.ATTACK;
-	sprite_index = spr_attack;
-	image_index = 0;
-	image_speed = 1.0;
-}
-	
+	if (instance_exists(target)) && (point_distance(x,y,target.x,target.y) <= enemy_attack_radius)
+	{
+		state = ENEMYSTATE.ATTACK;
+		sprite_index = spr_attack;
+		image_index = 0;
+		image_speed = 1.0;
+	}
 }
