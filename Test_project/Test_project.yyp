@@ -119,6 +119,7 @@
     {"id":{"name":"spr_chainsaw","path":"sprites/spr_chainsaw/spr_chainsaw.yy",},},
     {"id":{"name":"scr_player_fire_bullet","path":"scripts/scr_player_fire_bullet/scr_player_fire_bullet.yy",},},
     {"id":{"name":"spr_wood","path":"sprites/spr_wood/spr_wood.yy",},},
+    {"id":{"name":"obj_setup_pathway","path":"objects/obj_setup_pathway/obj_setup_pathway.yy",},},
     {"id":{"name":"obj_buildings_buttons","path":"objects/obj_buildings_buttons/obj_buildings_buttons.yy",},},
     {"id":{"name":"spr_shotgun_bullet_box","path":"sprites/spr_shotgun_bullet_box/spr_shotgun_bullet_box.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},

@@ -16,7 +16,7 @@ yTo = ystart;
 dir = 0;
 aggro_check = 0;
 aggro_check_duration = 5;
-enemy_aggro_radius = 128;
+enemy_aggro_radius = 256;
 enemy_attack_radius = 32;
 
 state_target = state;
@@ -42,3 +42,6 @@ enemy_script[ENEMYSTATE.WAIT] = scr_enemy_wait;
 
 
 my_collision = -1;
+
+path = path_add();
+in_finding_path = false;

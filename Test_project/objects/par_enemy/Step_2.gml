@@ -32,7 +32,6 @@ if instance_exists(my_collision)
 		}
 	}
 }
-
 // Inherit the parent event
 event_inherited();
 
