@@ -13,6 +13,7 @@ if instance_exists(my_collision)
 			other.my_collision.take_damage = true;
 			other.my_collision.damage = damage;
 			other.my_collision.knockback = damage;
+			other.in_finding_path = false;
 			if (obj_player.handHolding[obj_player.holding_number] != HAND.free)
 			{
 				global.inv[obj_player.holding_number][1] -= 1;
@@ -28,6 +29,7 @@ if instance_exists(my_collision)
 			other.my_collision.take_damage = true;
 			other.my_collision.damage = damage;
 			other.my_collision.knockback = damage;
+			other.in_finding_path = false;
 			instance_destroy();
 		}
 	}

@@ -18,16 +18,24 @@ function scr_zombie_chase(){
 	}
 	if (instance_exists(target)) && (point_distance(x,y,target.x,target.y) <= enemy_aggro_radius)
 	{
+		path_end();
 		var _collide = scr_enemy_tile_collision();
 		if (_collide)
 		{
-			alarm[1] = 10;
 			mp_grid_clear_cell(obj_setup_pathway.grid, floor(x / 16), floor(y / 16));
 			path_delete(path);
 			path = path_add();
 			mp_grid_path(obj_setup_pathway.grid, path, x, y, target.x, target.y,1);
 			path_start(path, 1, path_action_stop, true);
-			in_finding_path = true;
+			if (path_get_length(path)>10)
+			{in_finding_path = true;}
+			else
+			{
+				state = ENEMYSTATE.ATTACK;
+				sprite_index = spr_attack;
+				image_index = 0;
+				image_speed = 1.0;
+			}
 		}
 		else
 		{
