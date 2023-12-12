@@ -1,24 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (cell_size==32)
+if (entityHp <= 0)
 {
-	x = xTo+48;
-	y = yTo+32;
-	mask_index = spr_32px_coll;
-	frameWidth = 32;
-	frameHeight = 32;
+	var _cs = cell_size;
+	var _gx = x div _cs;
+	var _gy = y div _cs;
+	var _i_grid = buildings.ds_buildings_instances;
+	ds_grid_clear(buildings.ds_buildings_instances,_i_grid)
 }
-else if (cell_size==64)
-{
-	x = xTo + 32;
-	y = yTo + 32;
-	mask_index = spr_64px_coll;
-	frameWidth = 64;
-	frameHeight = 64;
-
-}
-
 
 // Inherit the parent event
 event_inherited();

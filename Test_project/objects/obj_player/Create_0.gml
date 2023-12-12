@@ -11,6 +11,7 @@ spd = 0;
 walkspd = 1.0;
 runspd = 4.0;
 z = 0;
+knockback = 0;
 
 
 spriteWalk = spr_player_walk;

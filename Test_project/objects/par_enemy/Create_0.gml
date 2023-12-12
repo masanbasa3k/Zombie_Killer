@@ -36,6 +36,7 @@ enemy_script[ENEMYSTATE.IDLE] = -1;
 enemy_script[ENEMYSTATE.CHASE] = -1;
 enemy_script[ENEMYSTATE.WANDER] = -1;
 enemy_script[ENEMYSTATE.ATTACK] = -1;
+damage = 10;
 enemy_script[ENEMYSTATE.HURT] = -1;
 enemy_script[ENEMYSTATE.DIE] = -1;
 enemy_script[ENEMYSTATE.WAIT] = scr_enemy_wait;

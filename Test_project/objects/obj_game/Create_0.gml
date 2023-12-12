@@ -18,7 +18,7 @@ global.setup_pathway = instance_create_layer(0,0,layer,obj_setup_pathway);
 
 
 global.player_has_level = 0;
- 
+global.player_hp = 100;
 
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
 room_goto(ROOM_START);

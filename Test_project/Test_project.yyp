@@ -167,6 +167,7 @@
     {"id":{"name":"spr_zombie_walk","path":"sprites/spr_zombie_walk/spr_zombie_walk.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"scr_zombie_die","path":"scripts/scr_zombie_die/scr_zombie_die.yy",},},
+    {"id":{"name":"obj_enemy_damage","path":"objects/obj_enemy_damage/obj_enemy_damage.yy",},},
     {"id":{"name":"spr_stone_axe","path":"sprites/spr_stone_axe/spr_stone_axe.yy",},},
     {"id":{"name":"tl_buildable","path":"tilesets/tl_buildable/tl_buildable.yy",},},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},

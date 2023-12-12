@@ -1,3 +1,12 @@
+with(obj_enemy_damage)
+{
+	if (place_meeting(x,y,other))
+	{
+		global.player_hp -= damage
+		
+	}
+}
+
 if (instance_exists(player_hand))
 {
 
