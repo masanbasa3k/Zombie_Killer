@@ -33,6 +33,7 @@ enum item
 	heavy_full_auto_m1,
 }
 
+// sprites
 itemSprite[item.rock] = spr_rock;
 itemSprite[item.wood] = spr_wood;
 itemSprite[item.apple] = spr_apple;
@@ -54,8 +55,29 @@ itemSprite[item.stone_axe] = spr_stone_axe;
 itemSprite[item.stone_pickaxe] = spr_stone_pickaxe;
 itemSprite[item.heavy_full_auto_m1] = spr_heavy_full_auto;
 
+// name
+itemName[item.rock] = "Rock";
+itemName[item.wood] = "Wood";
+itemName[item.apple] = "Apple";
+itemName[item.coal] = "Coal";
+itemName[item.wooden_axe] = "Wooden Axe";
+itemName[item.wooden_pickaxe] = "Wooden Pickaxe";
+itemName[item.chainsaw] = "Chainsaw";
+itemName[item.iron_bar] = "Iron Bar";
+itemName[item.gold_bar] = "Gold Bar";
+itemName[item.rusty_boltAction] = "Rusty Bolt Action Rifle";
 
+itemName[item.shotgun_ammo] = "Shotgun Bullet Box";
+itemName[item.small_ammo] = "Small Bullet Box";
+itemName[item.medium_ammo] = "Medium Bullet Box";
+itemName[item.large_ammo] = "Large Bullet Box";
+itemName[item.arrow] = "Arrow Box";
 
+itemName[item.stone_axe] = "Stone Axe";
+itemName[item.stone_pickaxe] = "Stone Pickaxe";
+itemName[item.heavy_full_auto_m1] = "Heavy Full Auto Rifle";
+
+// requirements
 itemReq[item.rock] = noone;
 itemReq[item.wood] = noone;
 itemReq[item.apple] = noone;
@@ -79,7 +101,7 @@ itemReq[item.heavy_full_auto_m1] = noone;
 
 
 
-
+// is item weapon
 isWeapon[item.rock] = false;
 isWeapon[item.wood] = false;
 isWeapon[item.apple] = false;
@@ -102,7 +124,7 @@ isWeapon[item.stone_pickaxe] = true;
 isWeapon[item.heavy_full_auto_m1] = true;
 
 
-
+// what is weaopon in hand
 weaponHandEnum[item.wooden_axe] = HAND.wooden_axe;
 weaponHandEnum[item.wooden_pickaxe] = HAND.wooden_pickaxe;
 weaponHandEnum[item.chainsaw] = HAND.chainsaw;

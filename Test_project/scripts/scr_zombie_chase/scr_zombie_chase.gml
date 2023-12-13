@@ -10,10 +10,9 @@ function scr_zombie_chase(){
 	}
 	if (in_finding_path)
 	{
-		if (path_position >= 1)
-		{
-			in_finding_path = false;
-		}
+		
+		if (path_position >= 1){in_finding_path = false;}
+		else if (scr_enemy_tile_collision()){path_delete(path);path = path_add();in_finding_path = false;}
 		exit;
 	}
 	if (instance_exists(target)) && (point_distance(x,y,target.x,target.y) <= enemy_aggro_radius)

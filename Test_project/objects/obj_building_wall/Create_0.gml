@@ -14,3 +14,5 @@ buildingType = 0;
 
 
 
+right_col = false;
+up_col = false;
