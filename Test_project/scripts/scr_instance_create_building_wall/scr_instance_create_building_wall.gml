@@ -24,6 +24,7 @@ function scr_instance_create_building_wall(){
 		}
 		
 		var _inst = instance_create_layer(_xx, _yy, "Buildings", obj_building_wall);
+		show_debug_message(_inst)
 		_i_grid[# _gx, _gy] = _inst;
 		
 	

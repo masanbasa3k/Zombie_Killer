@@ -5,5 +5,6 @@ function scr_write_to_griding(){
 	var _gx = x div _cs;
 	var _gy = y div _cs;
 	var _i_grid = buildings.ds_buildings_instances;
-	_i_grid[# _gx, _gy] = self;
+	_i_grid[# _gx, _gy] = 0;
+	_i_grid[# _gx, _gy] = id;
 }
