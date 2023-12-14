@@ -40,7 +40,7 @@ damage = 10;
 enemy_script[ENEMYSTATE.HURT] = -1;
 enemy_script[ENEMYSTATE.DIE] = -1;
 enemy_script[ENEMYSTATE.WAIT] = scr_enemy_wait;
-
+enemy_drop_xp = 50;
 
 my_collision = -1;
 

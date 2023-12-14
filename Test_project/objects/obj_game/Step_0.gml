@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (global.player_xp >= global.max_xp_count)
+{
+	global.player_xp = global.player_xp - global.max_xp_count;
+	global.max_xp_count = round(global.max_xp_count*1.5);
+	global.player_has_level += 1;
+}
+
 if (obj_player.x < -1)
 {
 	global.gamePaused = !global.gamePaused;

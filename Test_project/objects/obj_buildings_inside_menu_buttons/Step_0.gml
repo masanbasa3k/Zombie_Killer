@@ -5,8 +5,8 @@ hovering = position_meeting(mouse_x, mouse_y, self);
 
 item_type = buildings.buildingItem[obj_buildings_inside_menu.building_type][number]
 
-x = obj_camera.x - 100 - 96
-y = obj_camera.y - 100 + (number*64)
+//x = obj_camera.x - 100 - 96
+//y = obj_camera.y - 100 + (number*64)
 
 var _cam_x = obj_camera.x-100
 var _cam_y = obj_camera.y-100

@@ -9,3 +9,4 @@ self_create_button = noone;
 
 image_xscale = 4;
 image_speed = 0;
+

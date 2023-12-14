@@ -31,6 +31,7 @@ if (instance_exists(my_collision)) &&(my_collision.take_damage) && (entityDestro
 		flash = 1;
 		if (entityHp<=0)
 		{
+			global.player_xp += enemy_drop_xp;
 			state = ENEMYSTATE.DIE;
 			alarm[0] = 240;
 			instance_destroy(my_collision)

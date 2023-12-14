@@ -13,6 +13,8 @@ if (create_building_buttons)
 		with(instance_create_depth(RESOLUTION_W/2,RESOLUTION_H/2,-999,obj_buildings_inside_menu_buttons))
 		{
 			number = i;
+			x = obj_camera.x - 100 - 96
+			y = obj_camera.y - 100 + (number*64)
 		}
 	}
 create_building_buttons = false;
