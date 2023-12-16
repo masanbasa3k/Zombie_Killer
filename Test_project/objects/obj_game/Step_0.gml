@@ -8,28 +8,6 @@ if (global.player_xp >= global.max_xp_count)
 	global.player_has_level += 1;
 }
 
-if (obj_player.x < -1)
-{
-	global.gamePaused = !global.gamePaused;
-	
-	if (global.gamePaused)
-	{
-		show_debug_message("GAME PAUSED!")
-		with (all)
-		{
-			gamePausedImageSpeed = image_speed;
-			image_speed = 0;
-		}
-	}
-	else
-	{
-		with (all)
-		{
-			image_speed = gamePausedImageSpeed;
-		}
-	}
-}
-
 if (global.MenuOpen == false)
 {
 	global.inventoryMenu = false;

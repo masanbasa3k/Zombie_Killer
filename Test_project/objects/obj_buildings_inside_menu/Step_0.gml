@@ -19,3 +19,6 @@ if (create_building_buttons)
 	}
 create_building_buttons = false;
 }
+
+with(slider)
+{max_button_count=_itemListNumber}

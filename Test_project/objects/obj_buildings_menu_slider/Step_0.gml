@@ -1,6 +1,3 @@
-x = obj_camera.x - 175
-y = obj_camera.y - 100
-
 if (mouse_check_button_pressed(mb_left))
 {
 	var _button_x = x;
@@ -18,4 +15,8 @@ if (selected_)
 {
 	value = clamp((mouse_y-y)/sprite_height,0,max_value_)
 	event_user(0)
-}	
+}
+
+
+if (global.buildingMenu == false)
+{instance_destroy()}

@@ -60,7 +60,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.0.121",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"spr_player_hands_stone_axe","path":"sprites/spr_player_hands_stone_axe/spr_player_hands_stone_axe.yy",},},
@@ -94,6 +94,7 @@
     {"id":{"name":"shd_white_flash","path":"shaders/shd_white_flash/shd_white_flash.yy",},},
     {"id":{"name":"obj_buildings_inside_menu_slider","path":"objects/obj_buildings_inside_menu_slider/obj_buildings_inside_menu_slider.yy",},},
     {"id":{"name":"spr_zombie","path":"sprites/spr_zombie/spr_zombie.yy",},},
+    {"id":{"name":"spr_slider_256_px","path":"sprites/spr_slider_256_px/spr_slider_256_px.yy",},},
     {"id":{"name":"tl_grass","path":"tilesets/tl_grass/tl_grass.yy",},},
     {"id":{"name":"spr_inventory_slot","path":"sprites/spr_inventory_slot/spr_inventory_slot.yy",},},
     {"id":{"name":"spr_player_hands","path":"sprites/spr_player_hands/spr_player_hands.yy",},},
@@ -116,7 +117,6 @@
     {"id":{"name":"spr_buildings_button","path":"sprites/spr_buildings_button/spr_buildings_button.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},
     {"id":{"name":"scr_enemy_tile_collision","path":"scripts/scr_enemy_tile_collision/scr_enemy_tile_collision.yy",},},
-    {"id":{"name":"obj_building_menu","path":"objects/obj_building_menu/obj_building_menu.yy",},},
     {"id":{"name":"scr_MACROS","path":"scripts/scr_MACROS/scr_MACROS.yy",},},
     {"id":{"name":"spr_bullet_fire","path":"sprites/spr_bullet_fire/spr_bullet_fire.yy",},},
     {"id":{"name":"spr_arrow_box","path":"sprites/spr_arrow_box/spr_arrow_box.yy",},},
@@ -190,6 +190,7 @@
     {"id":{"name":"obj_text_queued","path":"objects/obj_text_queued/obj_text_queued.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_level_up_normal_button","path":"sprites/spr_level_up_normal_button/spr_level_up_normal_button.yy",},},
+    {"id":{"name":"obj_buildings_menu_slider","path":"objects/obj_buildings_menu_slider/obj_buildings_menu_slider.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"spr_zombie_dead","path":"sprites/spr_zombie_dead/spr_zombie_dead.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},

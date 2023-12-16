@@ -1,5 +1,6 @@
-inBuilding = global.buildingMenu
 
+
+inBuilding = global.buildingMenu
 
 
 if (inBuilding) && (select_building != -1)
@@ -67,17 +68,22 @@ if (inBuilding) && (select_building != -1)
 		}
 	}
 }
-
-
 // buildings buttons
-if (create_buttons)
+if (global.buildingMenu)
 {
-	for (var i = 0; i < sprite_get_number(spr_all_buildings); i++)
+	if (create_buttons)
 	{
-		with(instance_create_depth(RESOLUTION_W-64,64+(i*64),-999,obj_buildings_buttons))
+		var _slider = instance_create_depth(RESOLUTION_W-16,64,-999,obj_buildings_menu_slider)
+		with (_slider){max_button_count=sprite_get_number(spr_all_buildings)}
+		for (var i = 0; i < sprite_get_number(spr_all_buildings); i++)
 		{
-			building_number = i;
+			with(instance_create_depth(RESOLUTION_W-96,64+(i*64),-999,obj_buildings_buttons))
+			{
+				building_number = i;
+			}
 		}
+		create_buttons = false;
 	}
-	create_buttons = false;
 }
+else
+{create_buttons = true;}

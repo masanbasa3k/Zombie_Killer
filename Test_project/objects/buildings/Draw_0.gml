@@ -6,7 +6,6 @@ var _gx = (mx div _cs);
 var _gy = (my div _cs);
 var _dist = sqrt(power(mx - player_x,2) + power(my - player_y,2));
 
-
 // what is in the cell
 var _c = c_red;
 

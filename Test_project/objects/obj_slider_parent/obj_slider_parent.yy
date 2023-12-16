@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_slider_64px",
-    "path": "sprites/spr_slider_64px/spr_slider_64px.yy",
+    "name": "spr_slider_256_px",
+    "path": "sprites/spr_slider_256_px/spr_slider_256_px.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -8,5 +8,7 @@ if (hovering) && (mouse_check_button_pressed(mb_left))
 	buildings.select_building = building_number;
 }
 
-x = (obj_camera.x - (RESOLUTION_W/2) + _x)
-y = (obj_camera.y - (RESOLUTION_H/2) + _y) + (building_number)
+
+
+if (global.buildingMenu == false)
+{instance_destroy()}
