@@ -1,3 +1,5 @@
+depth = -998
+
 ds_buildings_types = 0;
 ds_buildings_instances = 0;
 create_buttons = true;

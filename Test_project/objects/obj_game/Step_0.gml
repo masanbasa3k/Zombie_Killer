@@ -23,3 +23,21 @@ if ((keyboard_check_pressed(vk_tab)) || (keyboard_check_pressed(vk_escape))) && 
 	global.inventoryMenu = true;
 	obj_player.state = scr_player_state_locked;
 }
+
+if (instance_exists(obj_player))
+{
+	global.player_x = obj_player.x;
+	global.player_y = obj_player.y;
+}
+
+if (global.settingsMenu == true) && (global.save_button == false)
+{
+	with (instance_create_layer(0,0,layer,obj_button)){type = "SaveButton"}
+	global.save_button = true;
+}
+
+if (global.settingsMenu == true) && (global.load_button == false)
+{
+	with (instance_create_layer(0,0,layer,obj_button)){type = "LoadButton"}
+	global.load_button = true;
+}

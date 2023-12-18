@@ -73,7 +73,7 @@ if (global.buildingMenu)
 {
 	if (create_buttons)
 	{
-		var _slider = instance_create_depth(RESOLUTION_W-16,64,-999,obj_buildings_menu_slider)
+		var _slider = instance_create_depth(RESOLUTION_W-24,64,-999,obj_buildings_menu_slider)
 		with (_slider){max_button_count=sprite_get_number(spr_all_buildings)}
 		for (var i = 0; i < sprite_get_number(spr_all_buildings); i++)
 		{

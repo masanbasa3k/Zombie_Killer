@@ -2,6 +2,9 @@ if (instance_exists(self))
 {obj_player.state = scr_player_state_locked}
 else{obj_player.state = scr_player_state_free}
 
+var _cam_x = obj_camera.x-100
+var _cam_y = obj_camera.y-100
+
 if (keyboard_check_pressed(vk_escape))
 {instance_destroy();}
 

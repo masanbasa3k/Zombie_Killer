@@ -1,3 +1,5 @@
+if (inBuilding){scr_nine_slice_box_stretched(spr_buildings_inside_menu,obj_camera.x+80,obj_camera.y-192,obj_camera.x+330,obj_camera.y+160,1)}
+
 layer_set_visible("T_buildable_ground", 0)
 if (!inBuilding) || (select_building == -1) exit;
 
@@ -58,4 +60,6 @@ repeat(_r)
 draw_set_alpha(1);
 
 layer_set_visible("T_buildable_ground", 1)
+
+
 

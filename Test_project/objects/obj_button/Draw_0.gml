@@ -47,3 +47,19 @@ if (type == "Settings")
 
 }
 
+if (type == "SaveButton")
+{
+	image_xscale = 1;
+	image_yscale = 1;
+	draw_sprite(spr_settings_button,image_index,x,y)
+
+}
+
+if (type == "LoadButton")
+{
+	image_xscale = 1;
+	image_yscale = 1;
+	draw_sprite(spr_settings_button,image_index,x,y)
+
+}
+

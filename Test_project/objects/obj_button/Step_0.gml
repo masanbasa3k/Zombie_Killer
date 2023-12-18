@@ -4,11 +4,12 @@ if (!global.MenuOpen)
 hovering = position_meeting(mouse_x, mouse_y, self);
 
 
-y = (obj_camera.y - (RESOLUTION_H/2) + 16);
+
 
 if (type == "Inventory")
 {
 	x = (obj_camera.x - (RESOLUTION_W/2) + ((1)*100));
+	y = (obj_camera.y - (RESOLUTION_H/2) + 16);
 	
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
@@ -22,6 +23,7 @@ if (type == "Inventory")
 if (type == "Building")
 {
 	x = (obj_camera.x - (RESOLUTION_W/2) + ((2)*100)) + 8;
+	y = (obj_camera.y - (RESOLUTION_H/2) + 16);
 	
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
@@ -35,6 +37,7 @@ if (type == "Building")
 if (type == "LevelUp")
 {
 	x = (obj_camera.x - (RESOLUTION_W/2) + ((3)*100)) + 16;
+	y = (obj_camera.y - (RESOLUTION_H/2) + 16);
 	
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
@@ -48,6 +51,7 @@ if (type == "LevelUp")
 if (type == "Settings")
 {
 	x = (obj_camera.x - (RESOLUTION_W/2) + ((4)*100)) + 24;
+	y = (obj_camera.y - (RESOLUTION_H/2) + 16);
 	
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
@@ -57,4 +61,39 @@ if (type == "Settings")
 		global.settingsMenu = true;
 	}
 }
+
+if (type == "SaveButton")
+{
+	x = (obj_camera.x - (RESOLUTION_W/2) + ((1)*100));
+	y = (obj_camera.y - (RESOLUTION_H/2) + 128);
+	
+	if (hovering) && (mouse_check_button_pressed(mb_left))
+	{
+		scr_save_game();
+	}
+	
+	if (global.settingsMenu == false)
+	{
+		global.save_button = false;
+		instance_destroy();
+	}
+}
+
+if (type == "LoadButton")
+{
+	x = (obj_camera.x - (RESOLUTION_W/2) + ((2)*100));
+	y = (obj_camera.y - (RESOLUTION_H/2) + 128);
+	
+	if (hovering) && (mouse_check_button_pressed(mb_left))
+	{
+		scr_load_game(global.game_save_slot);
+	}
+	
+	if (global.settingsMenu == false)
+	{
+		global.load_button = false;
+		instance_destroy();
+	}
+}
+
 

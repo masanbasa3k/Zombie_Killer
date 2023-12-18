@@ -5,6 +5,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 draw_set_color(c_black);
 
+
 global.gamePaused = false;
 global.textSpeed = .75;
 
@@ -19,8 +20,14 @@ global.setup_pathway = instance_create_layer(0,0,layer,obj_setup_pathway);
 
 global.player_has_level = 0;
 global.player_hp = 100;
+global.player_hp_max = 100;
 global.max_xp_count = 100;
 global.player_xp = 0;
+global.player_money = 0;
+
+global.player_x = -1;
+global.player_y = -1;
+
 
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
 room_goto(ROOM_START);
@@ -41,3 +48,8 @@ with (instance_create_layer(0,0,layer,obj_button)){type = "Settings"}
 global.levelUpMenu = false;
 instance_create_layer(0,0,layer,obj_button);
 with (instance_create_layer(0,0,layer,obj_button)){type = "LevelUp"}
+
+global.game_save_slot = 0;
+global.save_button = false;
+global.load_button = false;
+
