@@ -6,7 +6,8 @@ function scr_player_state_free(){
 	hSpeed = lengthdir_x(inputMagnitude * spd, inputDirection);
 	vSpeed = lengthdir_y(inputMagnitude * spd, inputDirection);
 
-	var _closestObj = instance_nearest(x, y, par_entity);
+	var _closestObj = -1;
+	if instance_exists(par_entity){_closestObj = instance_nearest(x, y, par_entity);}
 	var _closestObjDistance = point_distance(x, y, _closestObj.x, _closestObj.y)
 	var _hovering = position_meeting(mouse_x, mouse_y, _closestObj);
 	if (keyUse)

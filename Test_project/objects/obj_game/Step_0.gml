@@ -14,14 +14,20 @@ if (global.MenuOpen == false)
 	global.buildingMenu = false;
 	global.settingsMenu = false;
 	global.levelUpMenu = false;
-	obj_player.state = scr_player_state_free;
+	if (instance_exists(obj_player))
+	{
+		obj_player.state = scr_player_state_free;
+	}
 }
 
 if ((keyboard_check_pressed(vk_tab)) || (keyboard_check_pressed(vk_escape))) && (!instance_exists(obj_buildings_inside_menu))
 {
 	global.MenuOpen = !global.MenuOpen;
 	global.inventoryMenu = true;
-	obj_player.state = scr_player_state_locked;
+	if (instance_exists(obj_player))
+	{
+		obj_player.state = scr_player_state_locked;
+	}
 }
 
 if (instance_exists(obj_player))

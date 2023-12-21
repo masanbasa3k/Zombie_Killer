@@ -84,8 +84,11 @@ if (type == "LoadButton")
 	x = (obj_camera.x - (RESOLUTION_W/2) + ((2)*100));
 	y = (obj_camera.y - (RESOLUTION_H/2) + 128);
 	
+	
+	
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
+		// do stuff before load
 		scr_load_game(global.game_save_slot);
 	}
 	

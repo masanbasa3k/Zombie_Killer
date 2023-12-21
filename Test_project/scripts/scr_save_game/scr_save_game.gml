@@ -20,7 +20,28 @@ function scr_save_game(){
 	var temp_inv = ds_list_create();
 	temp_inv[| 0] = global.inv;
 	_map[? "inventory"] = ds_list_write(temp_inv);
+	
+	var _save_data = array_create(0);
+	with(par_entity)
+	{
+		var _save_entity = 
+		[
+			object_get_name(object_index),
+			x,
+			y,
+			image_index,
+			image_xscale,
+			entityHp,
+		]
+		array_push(_save_data,_save_entity);
+	}
+	
+	var temp_entities = ds_list_create();
+	temp_entities[| 0] = _save_data;
+	_map[? "entities"] = ds_list_write(temp_entities);
+	//_map[? "entities"] = _save_data;
 
+	
 	// save all to string
 	var _string = json_encode(_map);
 	SaveStringToFile("save" + string(global.game_save_slot) + ".sav", _string);

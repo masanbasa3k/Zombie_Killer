@@ -21,7 +21,7 @@ localFrame = 0;
 
 // HAND
 
-player_hand = instance_create_layer(x, y, "Items", obj_hand)
+player_hand = instance_create_layer(x, y, layer, obj_hand)
 with (player_hand)
 {
 	depth = other.depth-1;

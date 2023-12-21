@@ -14,3 +14,5 @@ draw_health = false;
 
 flash = 0;
 uFlash = shader_get_uniform(shd_white_flash, "flash");
+
+collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
