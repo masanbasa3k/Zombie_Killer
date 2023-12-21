@@ -4,7 +4,7 @@ function scr_save_game(){
 	
 	// save map
 	var _map = ds_map_create();
-	_map[? "room"] = room;
+	//_map[? "room"] = room;
 	//_map[? "buildings"] = 
 	_map[? "playerHealt"] = global.player_hp;
 	_map[? "playerHealtMax"] = global.player_hp_max;
@@ -21,25 +21,63 @@ function scr_save_game(){
 	temp_inv[| 0] = global.inv;
 	_map[? "inventory"] = ds_list_write(temp_inv);
 	
-	var _save_data = array_create(0);
-	with(par_entity)
+	var _save_data_items = array_create(0);
+	with(obj_item)
 	{
-		var _save_entity = 
+		var _save_item = 
 		[
-			object_get_name(object_index),
 			x,
 			y,
-			image_index,
-			image_xscale,
-			entityHp,
+			itemType,
+			itemAmount,
 		]
-		array_push(_save_data,_save_entity);
+		array_push(_save_data_items,_save_item);
 	}
 	
-	var temp_entities = ds_list_create();
-	temp_entities[| 0] = _save_data;
-	_map[? "entities"] = ds_list_write(temp_entities);
-	//_map[? "entities"] = _save_data;
+	var _temp_items = ds_list_create();
+	_temp_items[| 0] = _save_data_items;
+	_map[? "items"] = ds_list_write(_temp_items);
+	
+	
+	var _save_data_entity = array_create(0);
+	with(par_entity)
+	{
+		if (entityBuilding)
+		{
+			var _save_entity = 
+			[
+				object_get_name(object_index),
+				x,
+				y,
+				image_index,
+				image_xscale,
+				entityHp,
+				entityBuilding,
+				buildingType,
+				cell_size,
+				frameWidth,
+				frameHeight,
+			]
+		}
+		else
+		{
+			var _save_entity = 
+			[
+				object_get_name(object_index),
+				x,
+				y,
+				image_index,
+				image_xscale,
+				entityHp,
+				0,0,0,0,0,
+			]
+		}
+		array_push(_save_data_entity,_save_entity);
+	}
+	
+	var _temp_entities = ds_list_create();
+	_temp_entities[| 0] = _save_data_entity;
+	_map[? "entities"] = ds_list_write(_temp_entities);
 
 	
 	// save all to string

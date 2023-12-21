@@ -26,6 +26,19 @@ function scr_load_game(_slot){
 	    ds_list_read(_temp_inv,_json[? "inventory"]);
 	    global.inv = _temp_inv[| 0];		
 		
+		// items
+		var _temp_items = ds_list_create();
+	    ds_list_read(_temp_items,_json[? "items"]);
+		var _items = _temp_items[| 0];	
+		
+		with(obj_item) {instance_destroy()}
+		while (array_length(_items)>0)
+		{
+			var _load_item = array_pop(_items)
+			scr_instance_create_item(_load_item[0],_load_item[1],_load_item[2],_load_item[3])
+		}
+		
+		// entities
 		var _temp_entities = ds_list_create();
 	    ds_list_read(_temp_entities,_json[? "entities"]);
 		var _entities = _temp_entities[| 0];	
@@ -36,13 +49,31 @@ function scr_load_game(_slot){
 		{
 			var _load_entity = array_pop(_entities)
 			var _obj = asset_get_index(_load_entity[0])
-			if (_load_entity[5] > 0) // entityHp if greater then zero
+			var _entityHp = _load_entity[5];
+			var _entityBuilding = _load_entity[6];
+			if (_entityHp > 0) // entityHp if greater then zero
 			{
-				with (instance_create_layer(_load_entity[1],_load_entity[2],"World", _obj))
+				if (_entityBuilding)
 				{
-					image_index = _load_entity[3];
-					image_xscale = _load_entity[4];
-					entityHp = _load_entity[5];
+					with (instance_create_layer(_load_entity[1],_load_entity[2],"World", _obj))
+					{
+						image_index = _load_entity[3];
+						image_xscale = _load_entity[4];
+						entityHp = _entityHp;
+						buildingType = _load_entity[7];
+						cell_size = _load_entity[8];
+						frameWidth = _load_entity[9];
+						frameHeight = _load_entity[10];
+					}
+				}
+				else
+				{
+					with (instance_create_layer(_load_entity[1],_load_entity[2],"World", _obj))
+					{
+						image_index = _load_entity[3];
+						image_xscale = _load_entity[4];
+						entityHp = _entityHp;
+					}
 				}
 			}
 		}
