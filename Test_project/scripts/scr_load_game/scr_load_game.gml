@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_load_game(_slot){
-	
 	global.game_save_slot = _slot;
 	var _file = "save" + string(global.game_save_slot) + ".sav";
 	if (file_exists(_file))
@@ -37,11 +36,14 @@ function scr_load_game(_slot){
 		{
 			var _load_entity = array_pop(_entities)
 			var _obj = asset_get_index(_load_entity[0])
-			with (instance_create_layer(_load_entity[1],_load_entity[2],"World", _obj))
+			if (_load_entity[5] > 0) // entityHp if greater then zero
 			{
-				image_index = _load_entity[3];
-				image_xscale = _load_entity[4];
-				entityHp = _load_entity[5];
+				with (instance_create_layer(_load_entity[1],_load_entity[2],"World", _obj))
+				{
+					image_index = _load_entity[3];
+					image_xscale = _load_entity[4];
+					entityHp = _load_entity[5];
+				}
 			}
 		}
 		ds_map_destroy(_json);

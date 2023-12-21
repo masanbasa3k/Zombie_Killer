@@ -1,4 +1,5 @@
 if (instance_exists(obj_buildings_inside_menu)){exit;}
+if (!instance_exists(obj_player)){exit;}
 if (hovering){image_index=1}
 else{image_index=0}
 if (hand_slot)
