@@ -1,3 +1,5 @@
+
+
 state = scr_player_state_free;
 last_state = state;
 

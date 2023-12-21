@@ -1,4 +1,5 @@
-cell_size = buildings.cell_size[buildings.select_building];
+if (buildings.select_building != -1){cell_size = buildings.cell_size[buildings.select_building];}
+
 if (old_cell_size != cell_size){clear_ds_grid = true;}
 if(clear_ds_grid)
 {

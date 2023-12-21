@@ -1,0 +1,1 @@
+scr_load_game(global.game_save_slot);

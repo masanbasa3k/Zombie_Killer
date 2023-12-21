@@ -17,6 +17,8 @@ global.building = instance_create_layer(0,0,layer,buildings);
 
 global.setup_pathway = instance_create_layer(0,0,layer,obj_setup_pathway);
 
+global.day_night_cycle = instance_create_layer(0,0,layer,obj_day_night);
+
 
 global.player_has_level = 0;
 global.player_hp = 100;
