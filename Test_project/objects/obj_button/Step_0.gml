@@ -69,6 +69,7 @@ if (type == "SaveButton")
 	
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
+		global.hour = obj_surface_light.time_of_day;
 		scr_save_game();
 	}
 	

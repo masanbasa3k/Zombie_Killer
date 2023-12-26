@@ -18,6 +18,10 @@ function scr_load_game(_slot){
 		global.invSize = _json[? "inventorySize"];
 		global.player_x = _json[? "playerX"];
 		global.player_y = _json[? "playerY"];
+		global.day = _json[? "day"];
+		global.hour = _json[? "hour"];
+		obj_surface_light.time_of_day = global.hour;
+
 		// do stuff after load
 		if (instance_exists(obj_player)){instance_destroy(obj_player)}
 		instance_create_layer(global.player_x,global.player_y,"World",obj_player)

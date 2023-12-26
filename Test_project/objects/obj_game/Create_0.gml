@@ -5,6 +5,10 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 draw_set_color(c_black);
 
+global.day = 0;
+global.hour = 0;
+
+
 
 global.gamePaused = false;
 global.textSpeed = .75;
@@ -17,7 +21,7 @@ global.building = instance_create_layer(0,0,layer,buildings);
 
 global.setup_pathway = instance_create_layer(0,0,layer,obj_setup_pathway);
 
-global.day_night_cycle = instance_create_layer(0,0,layer,obj_day_night);
+global.light = instance_create_layer(0,0,layer,obj_surface_light);
 
 
 global.player_has_level = 0;

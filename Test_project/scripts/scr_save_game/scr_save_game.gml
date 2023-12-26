@@ -16,6 +16,9 @@ function scr_save_game(){
 	_map[? "inventorySize"] = global.invSize;
 	_map[? "playerX"] = global.player_x;
 	_map[? "playerY"] = global.player_y;
+	_map[? "day"] = global.day;
+	_map[? "hour"] = global.hour;
+
 	
 	var temp_inv = ds_list_create();
 	temp_inv[| 0] = global.inv;
