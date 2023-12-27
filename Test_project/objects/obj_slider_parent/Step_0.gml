@@ -1,3 +1,11 @@
+// chance depeth
+if (room != _room)
+{
+	_room = room;
+	depth = -room_height-3;
+}
+
+
 x = obj_camera.x - 175
 y = obj_camera.y - 100
 

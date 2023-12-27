@@ -1,4 +1,8 @@
-depth = -999
+
+_room = room;
+depth = -room_height-1;
+
+
 type = -1;
 hovering = false;
 

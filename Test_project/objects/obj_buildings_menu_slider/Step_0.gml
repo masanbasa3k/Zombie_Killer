@@ -1,3 +1,11 @@
+// chance depeth
+if (room != _room)
+{
+	_room = room;
+	depth = -room_height-3;
+}
+
+
 if (mouse_check_button_pressed(mb_left))
 {
 	var _button_x = x;

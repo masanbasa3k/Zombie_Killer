@@ -1,4 +1,7 @@
 
+_room = room;
+depth = -room_height-3;
+
 value = 0;
 max_value_ = 1;
 selected_ = false;

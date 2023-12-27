@@ -1,3 +1,11 @@
+// chance depth
+if (room != _room)
+{
+	_room = room;
+	depth = -room_height-1;
+}
+
+
 if (type == -1){instance_destroy()}
 if (!global.MenuOpen)
 {exit;}

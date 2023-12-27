@@ -12,3 +12,8 @@ hovering = false;
 
 hand_slot = false;
 hand_slot_number = -1;
+
+
+_room = room;
+depth = -room_height-2;
+

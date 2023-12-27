@@ -2,6 +2,14 @@ if (instance_exists(self))
 {obj_player.state = scr_player_state_locked}
 else{obj_player.state = scr_player_state_free}
 
+// chance depth
+if (room != _room)
+{
+	_room = room;
+	depth = -room_height-1;
+}
+
+
 var _cam_x = obj_camera.x-100
 var _cam_y = obj_camera.y-100
 

@@ -1,3 +1,6 @@
+// chance depeth
+_room = room;
+depth = -room_height-1;
 
 building_type = -1;
 is_open = false;

@@ -1,6 +1,13 @@
 if (keyboard_check_pressed(vk_escape))
 {instance_destroy();}
 
+// chance depeth
+if (room != _room)
+{
+	_room = room;
+	depth = -room_height-2;
+}
+
 hovering = position_meeting(mouse_x, mouse_y, self);
 
 item_type = buildings.buildingItem[obj_buildings_inside_menu.building_type][number]

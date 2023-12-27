@@ -1,4 +1,6 @@
-depth = -998
+
+_room = room;
+depth = -room_height-1;
 
 ds_buildings_types = 0;
 ds_buildings_instances = 0;

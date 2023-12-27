@@ -1,3 +1,9 @@
+// chance depeth
+if (room != _room)
+{
+	_room = room;
+	depth = -room_height-1;
+}
 
 
 inBuilding = global.buildingMenu

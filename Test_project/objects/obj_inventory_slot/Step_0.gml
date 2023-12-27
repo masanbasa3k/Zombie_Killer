@@ -1,3 +1,9 @@
+// chance depth
+if (room != _room)
+{
+	_room = room;
+	depth = -room_height-2;
+}
 
 
 if (hand_slot)
