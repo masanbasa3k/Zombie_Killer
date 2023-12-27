@@ -26,7 +26,7 @@ if (surface_exists(surface))
 		{
 			
 			//draw_sprite_ext(spr_light, 0, x - _cx, y - _cy, 0.5 + random(0.05), 0.5 + random(0.05), 0, c_white, 1);
-			draw_sprite_ext(spr_light, 0, x - _cx, y - _cy, 1, 1, 0, c_black, _t);
+			draw_sprite_ext(spr_light, 0, x - _cx, y - _cy, 0.5, 0.5, 0, c_black, _t);
 			
 		}
 	}

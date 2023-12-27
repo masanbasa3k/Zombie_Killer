@@ -213,7 +213,7 @@
     {"id":{"name":"spr_clean_boltAction","path":"sprites/spr_clean_boltAction/spr_clean_boltAction.yy",},},
     {"id":{"name":"obj_play_button","path":"objects/obj_play_button/obj_play_button.yy",},},
     {"id":{"name":"scr_zombie_wander","path":"scripts/scr_zombie_wander/scr_zombie_wander.yy",},},
-    {"id":{"name":"obj_rock_spawner","path":"objects/obj_rock_spawner/obj_rock_spawner.yy",},},
+    {"id":{"name":"obj_area_1_spawner","path":"objects/obj_area_1_spawner/obj_area_1_spawner.yy",},},
     {"id":{"name":"rm_parent","path":"rooms/rm_parent/rm_parent.yy",},},
   ],
   "RoomOrderNodes": [

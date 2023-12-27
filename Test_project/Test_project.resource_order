@@ -163,6 +163,6 @@
     {"name":"obj_building","order":1,"path":"objects/obj_building/obj_building.yy",},
     {"name":"obj_item","order":1,"path":"objects/obj_item/obj_item.yy",},
     {"name":"spr_clean_boltAction","order":4,"path":"sprites/spr_clean_boltAction/spr_clean_boltAction.yy",},
-    {"name":"obj_rock_spawner","order":9,"path":"objects/obj_rock_spawner/obj_rock_spawner.yy",},
+    {"name":"obj_area_1_spawner","order":9,"path":"objects/obj_area_1_spawner/obj_area_1_spawner.yy",},
   ],
 }
