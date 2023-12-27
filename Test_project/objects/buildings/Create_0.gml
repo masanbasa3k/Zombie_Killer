@@ -11,6 +11,8 @@ enum building{
 	table,
 	wooden_wall,
 	stone_wall,
+	crop,
+	torch,
 }
 
 /// buildings cost
@@ -18,7 +20,8 @@ buildingReq[building.furnace] = [[item.rock, 1], [item.coal, 1]];
 buildingReq[building.table] = [[item.wood, 1]];
 buildingReq[building.wooden_wall] = [[item.wood, 1]];
 buildingReq[building.stone_wall] = [[item.rock, 1]];
-
+buildingReq[building.crop] = [];
+buildingReq[building.torch] = [];//[[item.wood, 1], [item.coal, 1]];
 
 /// buildings drop
 buildingDrop[building.furnace] = [[item.rock, 3], [item.coal, 2]];
@@ -36,14 +39,25 @@ buildingMenu[building.table] = ["Table"]
 buildingMenuItem[building.table] = [4,5,15,16];
 buildingItem[building.table] = [item.wooden_axe, item.wooden_pickaxe, item.stone_axe, item.stone_pickaxe];
 
-buildingMenu[building.wooden_wall] = ["Wooden Wall"]
-buildingMenu[building.stone_wall] = ["Stone Wall"]
+buildingMenu[building.wooden_wall] = ["Wooden Wall"];
+buildingMenu[building.stone_wall] = ["Stone Wall"];
+buildingMenu[building.crop] = ["Crop"];
+buildingMenu[building.torch] = ["Torch"];
 
 
 cell_size[building.furnace] = 64;
 cell_size[building.table] = 64;
 cell_size[building.wooden_wall] = 32;
 cell_size[building.stone_wall] = 32;
+cell_size[building.crop] = 32;
+cell_size[building.torch] = 32;
+
+type_of_building[building.furnace] = "building";
+type_of_building[building.table] = "building";
+type_of_building[building.wooden_wall] = "wall";
+type_of_building[building.stone_wall] = "wall";
+type_of_building[building.crop] = "crop";
+type_of_building[building.torch] = "light";
 
 
 inBuilding = false;

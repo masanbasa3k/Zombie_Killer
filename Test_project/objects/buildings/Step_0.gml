@@ -66,10 +66,10 @@ if (inBuilding) && (select_building != -1)
 					var _how_many_req = buildingReq[select_building][i];
 					scr_remove_item_from_env_for_buildings(_how_many_req)
 				}
-				if  (cell_size[select_building] == 64){scr_instance_create_building(mx, my, select_building);}
-				else if (cell_size[select_building] == 32){scr_instance_create_building_wall(mx, my, select_building);}
-				
-				
+				if  (type_of_building[select_building] == "building"){scr_instance_create_building(mx, my, select_building);}
+				else if (type_of_building[select_building] == "wall"){scr_instance_create_building_wall(mx, my, select_building);}
+				else if (type_of_building[select_building] == "crop"){scr_instance_create_building_crop(mx, my, select_building);}
+				else if (type_of_building[select_building] == "light"){scr_instance_create_building_light(mx, my, select_building);}
 			}
 		}
 	}

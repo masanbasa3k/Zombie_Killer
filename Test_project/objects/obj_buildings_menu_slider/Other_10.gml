@@ -1,4 +1,4 @@
-if (max_button_count >= 4)
+if (max_button_count <= 4)
 {max_button_count=0}
 
 if instance_exists(obj_buildings_buttons)

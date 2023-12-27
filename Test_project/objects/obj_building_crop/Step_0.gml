@@ -24,18 +24,5 @@ if (entityHp <= 0)
 	ds_grid_clear(buildings.ds_buildings_instances,_i_grid)
 }
 
-if (place_meeting(x+8,y,obj_building_wall))
-{right_col = true;}
-else
-{right_col = false;}
-
-if (place_meeting(x,y-8,obj_building_wall))
-{up_col = true;}
-else
-{up_col = false;}
-
-
-
 // Inherit the parent event
 event_inherited();
-

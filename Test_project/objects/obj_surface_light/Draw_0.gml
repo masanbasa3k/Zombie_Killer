@@ -31,6 +31,15 @@ if (surface_exists(surface))
 		}
 	}
 	
+	if (instance_exists(obj_building_light))
+	{
+		with (obj_building_light)
+		{
+			
+			draw_sprite_ext(spr_light, 0, x - _cx, y - _cy, 0.4, 0.4, 0, c_black, _t-0.4);
+		}
+	}
+	
 	gpu_set_blendmode(bm_normal);
 	
 	
