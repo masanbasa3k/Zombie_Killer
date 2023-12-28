@@ -28,8 +28,13 @@ if (create_building_buttons)
 			y = obj_camera.y - 100 + (number*64)
 		}
 	}
-create_building_buttons = false;
+	with(slider)
+	{
+		if (_itemListNumber >= 4)
+		{max_button_count = _itemListNumber - 4}
+		else{max_button_count = 0}	
+	}
+	
+	create_building_buttons = false;
 }
 
-with(slider)
-{max_button_count=_itemListNumber}
