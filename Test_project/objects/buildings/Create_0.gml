@@ -21,7 +21,7 @@ buildingReq[building.table] = [[item.wood, 1]];
 buildingReq[building.wooden_wall] = [[item.wood, 1]];
 buildingReq[building.stone_wall] = [[item.rock, 1]];
 buildingReq[building.crop] = [];
-buildingReq[building.torch] = [];//[[item.wood, 1], [item.coal, 1]];
+buildingReq[building.torch] = [[item.wood, 1], [item.coal, 1]];
 
 /// buildings drop
 buildingDrop[building.furnace] = [[item.rock, 3], [item.coal, 2]];
