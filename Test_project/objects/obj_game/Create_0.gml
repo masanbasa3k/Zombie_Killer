@@ -25,12 +25,13 @@ global.light = instance_create_layer(0,0,layer,obj_surface_light);
 
 
 global.player_has_level = 0;
-global.player_hp = 100;
-global.player_hp_max = 100;
 global.max_xp_count = 100;
 global.player_xp = 0;
+global.player_hp = 100;
+global.player_hp_max = 100;
+global.player_stamina = 100;
+global.player_stamina_max = 100;
 global.player_money = 0;
-
 global.player_x = -1;
 global.player_y = -1;
 
