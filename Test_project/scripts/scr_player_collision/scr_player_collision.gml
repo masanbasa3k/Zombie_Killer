@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_player_collision(){
+	if (collisionMap == -1){collisionMap = layer_tilemap_get_id(layer_get_id("Col"));}
 	var _collision = false;
 	var _entityList = ds_list_create();
 	

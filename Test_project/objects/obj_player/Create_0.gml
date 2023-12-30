@@ -3,7 +3,7 @@
 state = scr_player_state_free;
 last_state = state;
 
-collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
+collisionMap = -1;
 activate = noone;
 _closestObj = -1;
 

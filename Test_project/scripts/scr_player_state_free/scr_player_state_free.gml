@@ -10,7 +10,11 @@ function scr_player_state_free(){
 	if instance_exists(par_entity){_closestObj = instance_nearest(x, y, par_entity);}
 	var _closestObjDistance = point_distance(x, y, _closestObj.x, _closestObj.y)
 	var _hovering = position_meeting(mouse_x, mouse_y, _closestObj);
-	if (keyUse)
+	
+	// buraya elindeki item yemek ise yiyip stamina artirma eklencek veya can itemi ise
+	// yemekler ve can esyalari elde gozukur azicik ileri atilir el sonra olur falan iste aq
+	
+	if (keyUse) && (_closestObj!= -1) && (global.player_stamina > 0)
 	{
 		if (_closestObj.entityBuilding) && (_closestObjDistance <= 64) && (_hovering)
 		{

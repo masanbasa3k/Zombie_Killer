@@ -22,7 +22,7 @@ if (entityHp <= 0)
 
 if(place_meeting(x,y,obj_player_damage)) && (entityDestroyable) && (entityIsEnemy == false)
 {
-	
+	global.player_stamina -= 5;
 	entityHp -= obj_player_damage.damage
 	flash = 1;
 	instance_destroy(obj_player_damage)

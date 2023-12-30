@@ -9,6 +9,7 @@ if instance_exists(my_collision)
 	{
 		if (place_meeting(x,y,other.my_collision))
 		{
+			global.player_stamina -= 5;
 			instance_destroy();
 			other.my_collision.take_damage = true;
 			other.my_collision.damage = damage;
