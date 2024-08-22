@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_remove_item_from_env_for_buildings",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "items",
-    "path": "folders/Scripts/items.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_remove_item_from_env_for_buildings",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_remove_item_from_env_for_buildings",
+  "parent":{
+    "name":"items",
+    "path":"folders/Scripts/items.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_player_fire_bullet",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "hands",
-    "path": "folders/Scripts/Player/hands.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_player_fire_bullet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_player_fire_bullet",
+  "parent":{
+    "name":"hands",
+    "path":"folders/Scripts/Player/hands.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

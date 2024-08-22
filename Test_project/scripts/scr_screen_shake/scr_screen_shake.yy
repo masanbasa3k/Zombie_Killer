@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_screen_shake",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "GAME",
-    "path": "folders/Scripts/GAME.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_screen_shake",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_screen_shake",
+  "parent":{
+    "name":"GAME",
+    "path":"folders/Scripts/GAME.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
