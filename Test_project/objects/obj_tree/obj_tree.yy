@@ -8,7 +8,7 @@
   "managed":true,
   "name":"obj_tree",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"propertyId":{"name":"entityDrop","path":"objects/par_entity/par_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[item.wood]",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"propertyId":{"name":"entityDrop","path":"objects/par_entity/par_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[item.wood,item.apple]",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"propertyId":{"name":"entityDestroyable","path":"objects/par_entity/par_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{

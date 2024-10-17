@@ -70,24 +70,6 @@ if (type == "Settings")
 	}
 }
 
-if (type == "SaveButton")
-{
-	x = (obj_camera.x - (RESOLUTION_W/2) + ((1)*100));
-	y = (obj_camera.y - (RESOLUTION_H/2) + 128);
-	
-	if (hovering) && (mouse_check_button_pressed(mb_left))
-	{
-		global.hour = obj_surface_light.time_of_day;
-		scr_save_game();
-	}
-	
-	if (global.settingsMenu == false)
-	{
-		global.save_button = false;
-		instance_destroy();
-	}
-}
-
 if (type == "LoadButton")
 {
 	x = (obj_camera.x - (RESOLUTION_W/2) + ((2)*100));
@@ -98,7 +80,7 @@ if (type == "LoadButton")
 	if (hovering) && (mouse_check_button_pressed(mb_left))
 	{
 		// do stuff before load
-		scr_load_game(global.game_save_slot);
+		game_end();
 	}
 	
 	if (global.settingsMenu == false)

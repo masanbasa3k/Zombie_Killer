@@ -60,7 +60,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Test_project",
   "resources":[
@@ -91,7 +91,6 @@
     {"id":{"name":"obj_item_creator_for_world","path":"objects/obj_item_creator_for_world/obj_item_creator_for_world.yy",},},
     {"id":{"name":"obj_item_manager","path":"objects/obj_item_manager/obj_item_manager.yy",},},
     {"id":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},},
-    {"id":{"name":"obj_load_game","path":"objects/obj_load_game/obj_load_game.yy",},},
     {"id":{"name":"obj_play_button","path":"objects/obj_play_button/obj_play_button.yy",},},
     {"id":{"name":"obj_player_damage","path":"objects/obj_player_damage/obj_player_damage.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
@@ -154,6 +153,7 @@
     {"id":{"name":"spr_all_buildings","path":"sprites/spr_all_buildings/spr_all_buildings.yy",},},
     {"id":{"name":"spr_apple","path":"sprites/spr_apple/spr_apple.yy",},},
     {"id":{"name":"spr_arrow_box","path":"sprites/spr_arrow_box/spr_arrow_box.yy",},},
+    {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
     {"id":{"name":"spr_buildable_ground","path":"sprites/spr_buildable_ground/spr_buildable_ground.yy",},},
     {"id":{"name":"spr_building_lights","path":"sprites/spr_building_lights/spr_building_lights.yy",},},
     {"id":{"name":"spr_buildings_button","path":"sprites/spr_buildings_button/spr_buildings_button.yy",},},
@@ -162,6 +162,7 @@
     {"id":{"name":"spr_buildings","path":"sprites/spr_buildings/spr_buildings.yy",},},
     {"id":{"name":"spr_bullet_fire","path":"sprites/spr_bullet_fire/spr_bullet_fire.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_buttons","path":"sprites/spr_buttons/spr_buttons.yy",},},
     {"id":{"name":"spr_chainsaw","path":"sprites/spr_chainsaw/spr_chainsaw.yy",},},
     {"id":{"name":"spr_clean_boltAction","path":"sprites/spr_clean_boltAction/spr_clean_boltAction.yy",},},
     {"id":{"name":"spr_coal","path":"sprites/spr_coal/spr_coal.yy",},},

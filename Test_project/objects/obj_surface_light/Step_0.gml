@@ -5,7 +5,7 @@ if (_room != room)
 }
 
 if(!instance_exists(obj_player)){exit;}
-time_of_day += 1;
+time_of_day += 0.1;
 //show_debug_message(time_of_day);
 var _t = scr_sin_ext(time_of_day * 0.002, 0, 1);
 //show_debug_message(_t )

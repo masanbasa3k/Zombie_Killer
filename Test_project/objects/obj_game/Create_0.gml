@@ -8,7 +8,7 @@ draw_set_color(c_black);
 global.day = 0;
 global.hour = 0;
 
-
+global.total_zombie_kill_count = 0;
 
 global.gamePaused = false;
 global.textSpeed = .75;

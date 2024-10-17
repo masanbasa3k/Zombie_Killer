@@ -3,7 +3,8 @@ with(obj_enemy_damage)
 	if (place_meeting(x,y,other))
 	{
 		global.player_hp -= damage
-		
+		if (global.player_hp <= 0)
+		{game_restart();}
 	}
 }
 

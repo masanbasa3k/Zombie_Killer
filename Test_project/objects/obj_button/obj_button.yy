@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_buildings_button",
-    "path":"sprites/spr_buildings_button/spr_buildings_button.yy",
+    "name":"spr_buttons",
+    "path":"sprites/spr_buttons/spr_buttons.yy",
   },
   "spriteMaskId":null,
   "visible":true,

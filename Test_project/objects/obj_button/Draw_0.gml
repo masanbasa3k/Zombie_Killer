@@ -1,6 +1,7 @@
 if (!global.MenuOpen)
 {exit;}
 
+
 draw_set_font(fnt_text);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
@@ -16,6 +17,7 @@ if (type == "Inventory")
 	image_xscale = 1;
 	image_yscale = 1;
 	draw_sprite(spr_inventory_button,image_index,x,y)
+
 
 }
 
@@ -47,19 +49,12 @@ if (type == "Settings")
 
 }
 
-if (type == "SaveButton")
-{
-	image_xscale = 1;
-	image_yscale = 1;
-	draw_sprite(spr_settings_button,image_index,x,y)
-
-}
-
 if (type == "LoadButton")
 {
 	image_xscale = 1;
 	image_yscale = 1;
-	draw_sprite(spr_settings_button,image_index,x,y)
+	draw_self();
+	draw_text_color(x+48,y+16,"EXIT",c_red,c_red,c_red,c_red,1)
 
 }
 

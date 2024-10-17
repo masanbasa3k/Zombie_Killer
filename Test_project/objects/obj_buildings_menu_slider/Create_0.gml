@@ -9,4 +9,3 @@ y = (obj_camera.y - (RESOLUTION_H/2) + _y)
 
 // Inherit the parent event
 event_inherited();
-

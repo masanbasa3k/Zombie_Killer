@@ -62,7 +62,6 @@ function scr_zombie_chase(){
 			var _collide = scr_enemy_tile_collision();
 			if (_collide)
 			{
-				scr_enemy_path_finding(xTo,yTo)
 				in_finding_path = true;
 			}
 			else

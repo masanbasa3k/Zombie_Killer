@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_load_new_game(){
 		//room = _json[? "room"];
+		global.total_zombie_kill_count = 0;
 		global.player_hp = 100;
 		global.player_hp_max = 100;
 		global.player_has_level = 0;

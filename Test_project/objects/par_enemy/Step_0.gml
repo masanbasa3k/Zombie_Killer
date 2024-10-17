@@ -34,6 +34,11 @@ if (instance_exists(my_collision)) &&(my_collision.take_damage) && (entityDestro
 			global.player_xp += enemy_drop_xp;
 			state = ENEMYSTATE.DIE;
 			alarm[0] = 240;
+			var _drop = irandom(11)
+			if (_drop>=0)&&(_drop<=3){scr_instance_create_item(x, y, item.medium_ammo);}
+			if (_drop==9){scr_instance_create_item(x, y, item.heavy_full_auto_m1);}
+			if (_drop==8){scr_instance_create_item(x, y, item.chainsaw);}
+			global.total_zombie_kill_count+=1;
 			instance_destroy(my_collision)
 		}
 		else
